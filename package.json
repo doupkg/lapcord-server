@@ -1,0 +1,28 @@
+{
+  "name": "lapcord-server",
+  "version": "1.0.0",
+  "description": "undefined module required to run Lapcord.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "swc ./src -d ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dzlib/lapcord-server.git"
+  },
+  "author": "Paulo <undevoted@proton.me>",
+  "license": "Apache-2.0",
+  "private": false,
+  "devDependencies": {
+    "@eslint/create-config": "^0.4.2",
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.40",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  }
+}
