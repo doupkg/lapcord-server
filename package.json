@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git@github.com:dzlib/lapcord-server.git"
   },
-  "author": "Paulo <undevoted@proton.me>",
+  "author": "Dou",
   "license": "Apache-2.0",
   "private": false,
   "devDependencies": {
