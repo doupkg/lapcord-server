@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "dynamicImport": true,
+      "decorators": false,
+      "tsx": false
+    },
+    "transform": {
+      "legacyDecorator": false
+    },
+    "baseUrl": "./src",
+    "paths": {},
+    "target": "es2022"
+  },
+  "exclude": ["node_modules", "dist"]
+}
