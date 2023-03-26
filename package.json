@@ -2,13 +2,13 @@
   "name": "lapcord-server",
   "version": "1.0.0",
   "description": "undefined module required to run Lapcord.",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "scripts": {
     "lint": "eslint ./src",
     "build": "swc ./src -d ./dist"
   },
   "bin": {
-    "lapcord": "./dist/index.js"
+    "lapcord": "./dist/server.js"
   },
   "repository": {
     "type": "git",
