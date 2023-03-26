@@ -7,7 +7,7 @@
     "build": "swc ./src -d ./dist"
   },
   "bin": {
-    "lsp-test": "./dist/index.js"
+    "lapcord": "./dist/index.js"
   },
   "repository": {
     "type": "git",
