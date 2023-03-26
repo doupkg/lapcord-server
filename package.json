@@ -6,6 +6,9 @@
   "scripts": {
     "build": "swc ./src -d ./dist"
   },
+  "bin": {
+    "lsp-test": "./dist/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:dzlib/lapcord-server.git"
