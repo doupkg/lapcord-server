@@ -4,6 +4,7 @@
   "description": "undefined module required to run Lapcord.",
   "main": "dist/index.js",
   "scripts": {
+    "lint": "eslint ./src",
     "build": "swc ./src -d ./dist"
   },
   "bin": {
