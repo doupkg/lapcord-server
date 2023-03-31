@@ -5,6 +5,7 @@
   "main": "dist/server.js",
   "scripts": {
     "lint": "eslint ./src",
+    "compile": "tsc -b",
     "build": "swc ./src -d ./dist"
   },
   "bin": {
