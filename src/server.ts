@@ -15,9 +15,9 @@ import { TextDocument } from 'vscode-languageserver-textdocument'
 
 import { Client } from '@xhayper/discord-rpc'
 
-let connection = createConnection(ProposedFeatures.all)
+const connection = createConnection(ProposedFeatures.all)
 
-process.on("unhandledRejection", (r) => {
+process.on('unhandledRejection', (r) => {
   connection.sendNotification(ShowMessageNotification.method, {
     message: `Discord RPC Error: ${r}`,
     type: MessageType.Info,
@@ -28,18 +28,18 @@ process.on("unhandledRejection", (r) => {
   // })
 })
 
-let documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument)
-let rpc = new Client({
+const documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument)
+const rpc = new Client({
   clientId: '1084261309677318154',
   transport: { type: 'ipc' },
 })
 
 enum IMAGE_KEYS {
-  icon_dark = "logo-dark",
-  icon = "logo-colorful",
-  idle = "idle",
-  moon = "moon",
-  file = "file"
+  icon_dark = 'logo-dark',
+  icon = 'logo-colorful',
+  idle = 'idle',
+  moon = 'moon',
+  file = 'file',
 }
 
 connection.onInitialize(() => {
@@ -59,15 +59,16 @@ connection.onInitialize(() => {
   return result
 })
 
-let rpc_connected: boolean = false
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+let rpc_connected = false
 
 connection.onInitialized(async () => {
   const wdps = await connection.window.createWorkDoneProgress()
   wdps.begin('Discord Presence', 0, 'Connecting...')
 
-  rpc.on("connected", () => {
-    rpc_connected = true;
-    wdps.report("Connected")
+  rpc.on('connected', () => {
+    rpc_connected = true
+    wdps.report('Connected')
     setTimeout(() => {
       wdps.report(`${rpc.user?.tag}`)
       setTimeout(() => wdps.done(), 10_000)
@@ -77,14 +78,14 @@ connection.onInitialized(async () => {
       smallImageKey: IMAGE_KEYS.idle,
       // smallImageText: "",
       // largeImageText: "",
-      details: "Idle",
+      details: 'Idle',
       // state: "",
-      startTimestamp: Date.now()
-    });
+      startTimestamp: Date.now(),
+    })
   })
 
-  rpc.login().catch(r => {
-    wdps.report("Error")
+  rpc.login().catch((r) => {
+    wdps.report('Error')
     connection.sendNotification(ShowMessageNotification.method, {
       message: `Discord RPC Error: ${r}`,
       type: MessageType.Info,
@@ -92,7 +93,7 @@ connection.onInitialized(async () => {
     setTimeout(() => {
       wdps.done()
     }, 10_000)
-  });
+  })
 })
 
 // documents.onDidOpen(({ document }) => {
