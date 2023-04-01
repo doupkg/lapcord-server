@@ -101,6 +101,11 @@ connection.onInitialized(async () => {
 documents.onDidOpen(({ document }) => {
   if (!rpc_connected) return
 
+  connection.sendNotification(ShowMessageNotification.method, {
+    message: `${JSON.stringify(document)}`,
+    type: MessageType.Info,
+  } as ShowMessageParams)
+
   rpc.user?.setActivity({
     largeImageKey: icon(document.languageId),
     largeImageText: `Editing a ${document.languageId.toUpperCase()} file`,
