@@ -14,5 +14,8 @@
     "paths": {},
     "target": "es2022"
   },
+  "module": {
+    "type": "commonjs"
+  },
   "exclude": ["node_modules", "dist"]
 }
