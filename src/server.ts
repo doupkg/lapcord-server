@@ -36,7 +36,7 @@ const rpc = new Client({
 
 enum IMAGE_KEYS {
   icon_dark = 'logo-dark',
-  icon = 'logo-colorful',
+  icon = 'logo-app',
   idle = 'idle',
   moon = 'moon',
   file = 'file',
@@ -59,7 +59,6 @@ connection.onInitialize(() => {
   return result
 })
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 let rpc_connected = false
 
 connection.onInitialized(async () => {
@@ -96,17 +95,21 @@ connection.onInitialized(async () => {
   })
 })
 
-// documents.onDidOpen(({ document }) => {
-//     if (!rpc_connected) return;
-//     rpc.user?.setActivity({
-//         largeImageKey: IMAGE_KEYS.file,
-//         largeImageText: `Editing a ${document.languageId.toUpperCase()} file`,
-//         smallImageKey: IMAGE_KEYS.icon,
-//         smallImageText: "Lapce",
-//         details: `Editing ${document.uri.split("/").at(-1)}`,
-//         startTimestamp: Date.now()
-//     });
-// });
+//Dex puto no comentes con //
+//solo con /* */
+
+documents.onDidOpen(({ document }) => {
+  if (!rpc_connected) return
+
+  rpc.user?.setActivity({
+    largeImageKey: icon(document.languageId),
+    largeImageText: `Editing a ${document.languageId.toUpperCase()} file`,
+    smallImageKey: IMAGE_KEYS.icon,
+    smallImageText: 'Lapce',
+    details: `Editing ${document.uri.split('/').at(-1)}`,
+    startTimestamp: Date.now(),
+  })
+})
 
 // documents.onDidClose(() => {
 //     if (!rpc_connected) return;
@@ -127,3 +130,11 @@ connection.onExit(() => {
 
 documents.listen(connection)
 connection.listen()
+
+function icon(extension: string) {
+  const knowLanguages = ['javascript', 'rust', 'typescript']
+
+  const fIcon = knowLanguages.find((e) => e === extension)
+
+  return typeof fIcon === 'string' ? fIcon : 'file'
+}
