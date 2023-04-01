@@ -7,15 +7,12 @@
       "decorators": false,
       "tsx": false
     },
-    "transform": {
-      "legacyDecorator": false
-    },
-    "baseUrl": "./src",
-    "paths": {},
+    "preserveAllComments": false,
     "target": "es2022"
   },
   "module": {
-    "type": "commonjs"
+    "type": "commonjs",
+    "strict": true
   },
   "exclude": ["node_modules", "dist"]
 }
