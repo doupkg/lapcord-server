@@ -1,8 +1,13 @@
-# lapcord-server
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-Language server protocol required to run the Lapcord extension.
+<h1 align='center'> Lapcord-server </h1>
+
+<div align='center'>
+
+  <img alt="Discord" src="https://img.shields.io/discord/876339668956893216?label=Discord&logo=Discord">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/dzlib/lapcord-server/super-linter.yml?label=Build&logo=GitHub%20Actions">
+  <img alt="GitHub contributors (via allcontributors.org)" src="https://img.shields.io/github/all-contributors/dzlib/lapcord-server?label=Contributors&logo=Handshake">
+  <img alt="GitHub" src="https://img.shields.io/github/license/dzlib/lapcord-server?label=License&logo=GitHub">
+  
+</div>
 
 ## Contributors ✨
 
@@ -23,5 +28,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
