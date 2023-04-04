@@ -3,8 +3,9 @@
     "target": "ES2022",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "experimentalDecorators": false,                   /* Enable experimental support for TC39 stage 2 draft decorators. */
     "module": "commonjs",                                /* Specify what module code is generated. */
-    "rootDir": "src",                                  /* Specify the root folder within your source files. */
+    "rootDir": ".",                                  /* Specify the root folder within your source files. */
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "outDir": "dist",                                   /* Specify an output folder for all emitted files. */
   },
   "exclude": ["node_modules", "dist"]

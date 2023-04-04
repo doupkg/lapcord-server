@@ -1,0 +1,15 @@
+{
+  "$schema": "./schema.json",
+  ".js": {
+    "LanguageId": "JavaScript",
+    "LanguageAsset": "javascript"
+  },
+  ".ts": {
+    "LanguageId": "TypeScript",
+    "LanguageAsset": "typescript"
+  },
+  ".rs": {
+    "LanguageId": "Rust",
+    "LanguageAsset": "rust"
+  }
+}

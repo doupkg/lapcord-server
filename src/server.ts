@@ -6,6 +6,7 @@ import { writeFile, unlink } from 'node:fs/promises'
 import { Client, SetActivity } from '@xhayper/discord-rpc'
 import * as path from 'node:path'
 import * as os from 'node:os'
+import * as languageData from '../assets/languages.json'
 
 const connection = createConnection(ProposedFeatures.all)
 const documents = new TextDocuments(TextDocument)
@@ -28,21 +29,32 @@ enum IMAGE_KEYS {
   idle = 'idle'
 }
 
+interface LanguageData {
+  LanguageId: string
+  LanguageAsset: string
+}
+
 type Type = 'idle' | 'editing'
 
 async function setActivity(type: Type, document?: TextDocument): Promise<void> {
+  let Language: LanguageData
+
   if (type === 'editing' && !document) return sendNotification('You need document when use Editing type!', MessageType.Error)
-  if (document && !validUri(document?.uri)) return sendNotification('Invalid uri!', MessageType.Error)
+  if (document) {
+    Language = resolveJSON(document.uri)
+  }
 
   const activityObject: SetActivity = {
     state: type === 'idle' ? 'Idling' : 'Editing ' + document?.uri.split('/').at(-1),
-    largeImageKey: type === 'idle' ? IMAGE_KEYS.logo : fetchIcon(document?.languageId as string),
+    largeImageKey: type === 'idle' ? IMAGE_KEYS.logo : Language ? Language.LanguageAsset : 'file',
+    largeImageText: type === 'idle' ? 'Idling' : Language ? 'Editing a ' + Language.LanguageId + ' file' : 'Editing a file',
     smallImageKey: type === 'idle' ? IMAGE_KEYS.idle : IMAGE_KEYS.logo,
+    smallImageText: type === 'idle' ? 'Idle' : 'Lapce',
     startTimestamp: CurrentTimestamp
   }
 
   if (type === 'editing') {
-    activityObject.details = 'In ' + path.dirname(document?.uri.replace('file://', '') as string)
+    activityObject.details = 'In ' + path.dirname(document.uri.replace('file://', '') as string)
   }
 
   client.user?.setActivity(activityObject)
@@ -54,6 +66,11 @@ function startTimer(document: TextDocument, time?: number) {
     if (documents.get(document.uri)) setActivity('idle')
     if (existsSync(LockFile)) unlink(LockFile)
   }, time || 10000)
+}
+
+function resolveJSON(uri: string): LanguageData | null {
+  const extension = path.extname(uri) || null
+  return languageData[extension] ? { ...languageData[extension] } : null
 }
 
 async function setUp() {
@@ -76,15 +93,6 @@ async function createLock(): Promise<boolean> {
   if (existsSync(LockFile)) return false
   await writeFile(LockFile, process.pid.toString())
   return true
-}
-
-function validUri(uri: string) {
-  return /^file:\/\/\/.*\.[^.]+$/.test(uri)
-}
-
-function fetchIcon(languageId: string) {
-  const knownLanguages = ['javascript', 'typescript', 'rust']
-  return knownLanguages.find((x) => x === languageId) ? languageId : 'file'
 }
 
 function sendNotification(message: string, type: MessageType) {

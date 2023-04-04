@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "LanguageId": {
+        "type": "string"
+      },
+      "LanguageAsset": {
+        "type": "string"
+      }
+    },
+    "required": ["LanguageId", "LanguageAsset"]
+  }
+}
