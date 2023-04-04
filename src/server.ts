@@ -1,9 +1,9 @@
 #! /usr/bin/env node
 import { createConnection, MessageType, ProposedFeatures, ShowMessageNotification, ShowMessageParams, TextDocuments, TextDocumentSyncKind, WorkDoneProgressReporter } from 'vscode-languageserver/node'
 import { TextDocument } from 'vscode-languageserver-textdocument'
-import { Client, SetActivity } from '@xhayper/discord-rpc'
 import { existsSync } from 'node:fs'
 import { writeFile, unlink } from 'node:fs/promises'
+import { Client, SetActivity } from '@xhayper/discord-rpc'
 import * as path from 'node:path'
 import * as os from 'node:os'
 
@@ -17,10 +17,10 @@ const client = new Client({
   }
 })
 
-const lockFile = path.join(os.tmpdir(), 'discord-rpc.lock')
+const LockFile = path.join(os.tmpdir(), 'discord-rpc.lock')
 const CurrentTimestamp = Date.now()
 let wdps: WorkDoneProgressReporter
-let RPCConection = false
+let rpcConection = false
 let timerId: NodeJS.Timeout | null = null
 
 enum IMAGE_KEYS {
@@ -31,8 +31,8 @@ enum IMAGE_KEYS {
 type Type = 'idle' | 'editing'
 
 async function setActivity(type: Type, document?: TextDocument): Promise<void> {
-  if (type === 'editing' && !document) throw new Error('You need document when use Editing type!')
-  if (document && !validUri(document?.uri)) throw new TypeError('Invalid uri!')
+  if (type === 'editing' && !document) return sendNotification('You need document when use Editing type!', MessageType.Error)
+  if (document && !validUri(document?.uri)) return sendNotification('Invalid uri!', MessageType.Error)
 
   const activityObject: SetActivity = {
     state: type === 'idle' ? 'Idling' : 'Editing ' + document?.uri.split('/').at(-1),
@@ -52,7 +52,7 @@ function startTimer(document: TextDocument, time?: number) {
   if (timerId) clearTimeout(timerId)
   timerId = setTimeout(async () => {
     if (documents.get(document.uri)) setActivity('idle')
-    if (existsSync(lockFile)) unlink(lockFile)
+    if (existsSync(LockFile)) unlink(LockFile)
   }, time || 10000)
 }
 
@@ -64,7 +64,7 @@ async function setUp() {
   if (!lock) return wdps.report('Already connected!')
 
   client.on('connected', () => {
-    RPCConection = true
+    rpcConection = true
     wdps.report(client.user?.tag as string)
     if (client.user) setActivity('idle')
   })
@@ -73,8 +73,8 @@ async function setUp() {
 }
 
 async function createLock(): Promise<boolean> {
-  if (existsSync(lockFile)) return false
-  await writeFile(lockFile, process.pid.toString())
+  if (existsSync(LockFile)) return false
+  await writeFile(LockFile, process.pid.toString())
   return true
 }
 
@@ -87,14 +87,21 @@ function fetchIcon(languageId: string) {
   return knownLanguages.find((x) => x === languageId) ? languageId : 'file'
 }
 
+function sendNotification(message: string, type: MessageType) {
+  connection.sendNotification(ShowMessageNotification.method, {
+    message,
+    type
+  } as ShowMessageParams)
+}
+
 documents.onDidSave(({ document }) => {
-  if (!RPCConection) return null
+  if (!rpcConection) return null
   setActivity('editing', document)
   startTimer(document)
 })
 
 documents.onDidChangeContent(({ document }) => {
-  if (!RPCConection) return null
+  if (!rpcConection) return null
   setActivity('editing', document)
   startTimer(document)
 })
@@ -119,10 +126,7 @@ connection.onInitialize(() => {
 })
 
 process.on('unhandledRejection', (e) => {
-  connection.sendNotification(ShowMessageNotification.method, {
-    message: 'Error: ' + e,
-    type: MessageType.Error
-  } as ShowMessageParams)
+  sendNotification('Error: ' + e, MessageType.Error)
   wdps.report('Error')
 })
 

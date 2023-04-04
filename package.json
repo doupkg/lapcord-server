@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint ./src",
     "compile": "tsc -b",
-    "build": "swc ./src -d ./dist"
+    "build": "swc ./src -d ./dist",
+    "clean:lock": "node scripts/removeLock.cjs"
   },
   "bin": {
     "lapcord": "./dist/server.js"
