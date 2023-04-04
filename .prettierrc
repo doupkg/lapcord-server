@@ -3,5 +3,16 @@
   "semi": false,
   "tabWidth": 2,
   "useTabs": false,
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "editorconfig": true,
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "printWidth": 200,
+        "singleAttributePerLine": false
+      }
+    }
+  ]
 }
