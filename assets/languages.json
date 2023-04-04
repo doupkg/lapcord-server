@@ -1,15 +1,181 @@
 {
   "$schema": "./schema.json",
+
+  ".bashrc": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "bash"
+  },
+  
+  ".bunfig": {
+    "LanguageId": "Bun",
+    "LanguageAsset": "bun"
+  },
+
+  ".editorconfig": {
+    "LanguageId": "EditorConfig",
+    "LanguageAsset": "editorconfig"
+  },
+
+  ".eslintrc": {
+    "LanguageId": "ESLint",
+    "LanguageAsset": "eslint"
+  },
+  ".eslintrc.json": {
+    "LanguageId": "ESLint",
+    "LanguageAsset": "eslint"
+  },
+  ".eslintrc.js": {
+    "LanguageId": "ESLint",
+    "LanguageAsset": "eslint"
+  },
+
+  ".gitignore": {
+    "LanguageId": "Git",
+    "LanguageAsset": "git"
+  },
+  ".gitkeep": {
+    "LanguageId": "Git",
+    "LanguageAsset": "git"
+  },
+  ".gitmodules": {
+    "LanguageId": "Git",
+    "LanguageAsset": "git"
+  },
+
+  ".go": {
+    "LanguageId": "Go",
+    "LanguageAsset": "go"
+  },
+
+  ".graphql": {
+    "LanguageId": "GraphQL",
+    "LanguageAsset": "graphql"
+  },
+  ".gql": {
+    "LanguageId": "GraphQL",
+    "LanguageAsset": "graphql"
+  },
+
   ".js": {
     "LanguageId": "JavaScript",
     "LanguageAsset": "javascript"
   },
+  ".cjs": {
+    "LanguageId": "JavaScript",
+    "LanguageAsset": "javascript"
+  },
+  ".mjs": {
+    "LanguageId": "JavaScript",
+    "LanguageAsset": "javascript"
+  },
+
+  ".json": {
+    "LanguageId": "JSON",
+    "LanguageAsset": "json"
+  },
+
+  "package.json": {
+    "LanguageId": "NPM",
+    "LanguageAsset": "npm"
+  },
+  "package-lock.json": {
+    "LanguageId": "NPM",
+    "LanguageAsset": "npm"
+  },
+
+  ".prettierrc": {
+    "LanguageId": "Prettier",
+    "LanguageAsset": "prettier"
+  },
+  ".prettierignore": {
+    "LanguageId": "Prettier",
+    "LanguageAsset": "prettier"
+  },
+
+  ".py": {
+    "LanguageId": "Python",
+    "LanguageAsset": "python"
+  },
+  ".pyi": {
+    "LanguageId": "Python",
+    "LanguageAsset": "python"
+  },
+  ".pyc": {
+    "LanguageId": "Python",
+    "LanguageAsset": "python"
+  },
+  ".pyd": {
+    "LanguageId": "Python",
+    "LanguageAsset": "python"
+  },
+  ".pyw": {
+    "LanguageId": "Python",
+    "LanguageAsset": "python"
+  },
+  ".pyz": {
+    "LanguageId": "Python",
+    "LanguageAsset": "python"
+  },
+  ".pyo": {
+    "LanguageId": "Python",
+    "LanguageAsset": "python"
+  },
+
+  ".jsx": {
+    "LanguageId": "React",
+    "LanguageAsset": "react"
+  },
+  ".tsx": {
+    "LanguageId": "React",
+    "LanguageAsset": "react"
+  },
+
+  ".replit": {
+    "LanguageId": "Replit",
+    "LanguageAsset": "replit"
+  },
+
+  ".rs": {
+    "LanguageId": "Rust",
+    "LanguageAsset": "rust"
+  },
+  
+  ".swcrc": {
+    "LanguageId": "SWC",
+    "LanguageAsset": "swc"
+  },
+
   ".ts": {
     "LanguageId": "TypeScript",
     "LanguageAsset": "typescript"
   },
-  ".rs": {
-    "LanguageId": "Rust",
-    "LanguageAsset": "rust"
+
+  ".vue": {
+    "LanguageId": "Vue",
+    "LanguageAsset": "vue"
+  },
+
+  ".wat": {
+    "LanguageId": "WebAssembly",
+    "LanguageAsset": "webassembly"
+  },
+  ".wasm": {
+    "LanguageId": "WebAssembly",
+    "LanguageAsset": "webassembly"
+  },
+
+  ".xaml": {
+    "LanguageId": "XAML",
+    "LanguageAsset": "xaml"
+  },
+  
+  ".yarnrc.yml": {
+    "LanguageId": "Yarn",
+    "LanguageAsset": "yarn"
+  },
+  "yarn.lock": {
+    "LanguageId": "Yarn",
+    "LanguageAsset": "yarn"
   }
+  
 }

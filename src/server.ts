@@ -22,6 +22,7 @@ const LockFile = path.join(os.tmpdir(), 'discord-rpc.lock')
 const CurrentTimestamp = Date.now()
 let wdps: WorkDoneProgressReporter
 let rpcConection = false
+let rootUri: string
 let timerId: NodeJS.Timeout | null = null
 
 enum IMAGE_KEYS {
@@ -54,7 +55,7 @@ async function setActivity(type: Type, document?: TextDocument): Promise<void> {
   }
 
   if (type === 'editing') {
-    activityObject.details = 'In ' + path.dirname(document.uri.replace('file://', '') as string)
+    activityObject.details = 'In ' + path.basename(rootUri.slice(7, -1))
   }
 
   client.user?.setActivity(activityObject)
@@ -116,7 +117,8 @@ documents.onDidChangeContent(({ document }) => {
 
 connection.onInitialized(() => setUp())
 
-connection.onInitialize(() => {
+connection.onInitialize((params) => {
+  rootUri = params.rootUri
   documents.listen(connection)
 
   return {
