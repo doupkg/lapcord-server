@@ -3,10 +3,10 @@
 <div align='center'>
 
   <img alt="Discord" src="https://img.shields.io/discord/876339668956893216?label=Discord&logo=Discord">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/dzlib/lapcord-server/super-linter.yml?label=Build&logo=GitHub%20Actions">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/doupkg/lapcord-server/super-linter.yml?label=Build&logo=GitHub%20Actions">
   <img alt="npm" src="https://img.shields.io/npm/v/lapcord-server?label=Lapcord&logo=npm">
-  <img alt="GitHub contributors (via allcontributors.org)" src="https://img.shields.io/github/all-contributors/dzlib/lapcord-server?label=Contributors&logo=Handshake">
-  <img alt="GitHub" src="https://img.shields.io/github/license/dzlib/lapcord-server?label=License&logo=GitHub">
+  <img alt="GitHub contributors (via allcontributors.org)" src="https://img.shields.io/github/all-contributors/doupkg/lapcord-server?label=Contributors&logo=Handshake">
+  <img alt="GitHub" src="https://img.shields.io/github/license/doupkg/lapcord-server?label=License&logo=GitHub">
   
 </div>
 
@@ -20,9 +20,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/DexSlender"><img src="https://avatars.githubusercontent.com/u/91853649?v=4?s=100" width="100px;" alt="DexSlender"/><br /><sub><b>DexSlender</b></sub></a><br /><a href="https://github.com/dzlib/lapcord-server/commits?author=DexSlender" title="Code">💻</a> <a href="#ideas-DexSlender" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dzlib/lapcord-server/commits?author=DexSlender" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/DexSlender"><img src="https://avatars.githubusercontent.com/u/91853649?v=4?s=100" width="100px;" alt="DexSlender"/><br /><sub><b>DexSlender</b></sub></a><br /><a href="https://github.com/doupkg/lapcord-server/commits?author=DexSlender" title="Code">💻</a> <a href="#ideas-DexSlender" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/doupkg/lapcord-server/commits?author=DexSlender" title="Tests">⚠️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://t.me/hyduez"><img src="https://avatars.githubusercontent.com/u/79933487?v=4?s=100" width="100px;" alt="Paulo"/><br /><sub><b>Paulo</b></sub></a><br /><a href="#maintenance-Hyduez" title="Maintenance">🚧</a> <a href="#ideas-Hyduez" title="Ideas, Planning, & Feedback">🤔</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.jesusale.cf/"><img src="https://avatars.githubusercontent.com/u/54212600?v=4?s=100" width="100px;" alt="Jesus Alejandro"/><br /><sub><b>Jesus Alejandro</b></sub></a><br /><a href="https://github.com/dzlib/lapcord-server/commits?author=jesus-ale43" title="Code">💻</a> <a href="#design-jesus-ale43" title="Design">🎨</a> <a href="https://github.com/dzlib/lapcord-server/commits?author=jesus-ale43" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.jesusale.cf/"><img src="https://avatars.githubusercontent.com/u/54212600?v=4?s=100" width="100px;" alt="Jesus Alejandro"/><br /><sub><b>Jesus Alejandro</b></sub></a><br /><a href="https://github.com/doupkg/lapcord-server/commits?author=jesus-ale43" title="Code">💻</a> <a href="#design-jesus-ale43" title="Design">🎨</a> <a href="https://github.com/doupkg/lapcord-server/commits?author=jesus-ale43" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
 </table>
