@@ -14,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dzlib/lapcord-server.git"
+    "url": "https://github.com/doupkg/lapcord-server.git"
   },
   "author": {
     "name": "Dou",
-    "url": "https://github.com/dzlib"
+    "url": "https://github.com/doupkg"
   },
   "license": "Apache-2.0",
   "private": false,
