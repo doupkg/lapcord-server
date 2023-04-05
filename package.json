@@ -1,6 +1,6 @@
 {
   "name": "lapcord-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "undefined module required to run Lapcord.",
   "main": "dist/server.js",
   "scripts": {
