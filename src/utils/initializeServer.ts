@@ -19,8 +19,8 @@ export async function initializeServer() {
   workDoneProgress = await Connection.window.createWorkDoneProgress()
   workDoneProgress.begin('Discord Presence', 0, 'Connecting...')
 
-  const lock = await createLock()
-  if (!lock) return workDoneProgress.report('Already connected!')
+  /* const lock = await createLock()
+  if (!lock) return workDoneProgress.report('Already connected!') */
 
   Ninth.on('connected', () => {
     rpcConection = true
@@ -31,8 +31,8 @@ export async function initializeServer() {
   return Ninth.login()
 }
 
-async function createLock() {
+/* async function createLock() {
   if (existsSync(LockFile)) return false
   await writeFile(LockFile, process.pid.toString())
   return true
-}
+} */
