@@ -1,8 +1,8 @@
 import type { WorkDoneProgressServerReporter } from 'vscode-languageserver'
 import { Client } from '@xhayper/discord-rpc'
-import { existsSync } from 'node:fs'
+/* import { existsSync } from 'node:fs'
 import { writeFile } from 'node:fs/promises'
-import { LockFile } from '../config'
+import { LockFile } from '../config' */
 import { Connection } from '../server'
 import { setActivity } from './setActivity'
 
