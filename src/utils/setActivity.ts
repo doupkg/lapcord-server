@@ -21,7 +21,7 @@ export async function setActivity(type: StatusType, document?: TextDocument) {
   const activityObject: SetActivity = {
     state: getState(type, document),
     largeImageKey: getLargeImageKey(type, language),
-    largeImageText: getLargeImageText(type, language, document),
+    largeImageText: getLargeImageText(type, language),
     smallImageKey: getSmallImageKey(type),
     smallImageText: getSmallImageText(type),
     startTimestamp: CurrentTimestamp
@@ -46,8 +46,8 @@ function getLargeImageKey(type: StatusType, language?: LanguageData) {
   return type === 'idle' ? IMAGE_KEYS.logo : language ? language.LanguageAsset : IMAGE_KEYS.document
 }
 
-function getLargeImageText(type: StatusType, language?: LanguageData, document?: TextDocument) {
-  return type === 'idle' ? 'Idling' : 'Editing a ' + language ? language.LanguageId + ' file' : document.languageId
+function getLargeImageText(type: StatusType, language?: LanguageData) {
+  return type === 'idle' ? 'Idling' : language ? 'Editing a ' + language.LanguageId + ' file' : 'Editing a file'
 }
 
 function getSmallImageKey(type: StatusType) {

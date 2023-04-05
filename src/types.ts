@@ -1,5 +1,5 @@
 export enum IMAGE_KEYS {
-  logo = 'logo-app',
+  logo = 'lapce',
   idle = 'idle',
   document = 'document'
 }
