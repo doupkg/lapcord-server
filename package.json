@@ -1,6 +1,6 @@
 {
   "name": "lapcord-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "undefined module required to run Lapcord.",
   "main": "dist/server.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:dzlib/lapcord-server.git"
+    "url": "https://github.com/dzlib/lapcord-server.git"
   },
   "author": {
     "name": "Dou",
