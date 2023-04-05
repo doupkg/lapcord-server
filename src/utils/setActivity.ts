@@ -47,7 +47,7 @@ function getLargeImageKey(type: StatusType, language?: LanguageData) {
 }
 
 function getLargeImageText(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? 'Idling' : 'Editing a ' + language ? language.LanguageId : 'text' + 'document'
+  return type === 'idle' ? 'Idling' : language ? 'Editing a ' + language.LanguageAsset + 'document' : 'Editing a text document'
 }
 
 function getSmallImageKey(type: StatusType) {
