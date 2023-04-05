@@ -1,7 +1,9 @@
 import type { WorkDoneProgressServerReporter } from 'vscode-languageserver'
 import { Client } from '@xhayper/discord-rpc'
+import { existsSync } from 'node:fs'
+import { writeFile } from 'node:fs/promises'
+import { LockFile } from '../config'
 import { Connection } from '../server'
-import { createLock } from './createLock'
 import { setActivity } from './setActivity'
 
 export let workDoneProgress: WorkDoneProgressServerReporter
@@ -27,4 +29,10 @@ export async function initializeServer() {
   })
 
   return Ninth.login()
+}
+
+async function createLock() {
+  if (existsSync(LockFile)) return false
+  await writeFile(LockFile, process.pid.toString())
+  return true
 }

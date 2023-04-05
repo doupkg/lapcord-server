@@ -15,13 +15,13 @@ export async function setActivity(type: StatusType, document?: TextDocument) {
   if (type === 'editing' && !document) {
     return sendNotification('You need "document" when you use the "editing" type!', MessageType.Error)
   } else if (document) {
-    language = resolveJson(document.uri)
+    language = resolveJson(document)
   }
 
   const activityObject: SetActivity = {
     state: getState(type, document),
     largeImageKey: getLargeImageKey(type, language),
-    largeImageText: getLargeImageText(type, language),
+    largeImageText: getLargeImageText(type, language, document),
     smallImageKey: getSmallImageKey(type),
     smallImageText: getSmallImageText(type),
     startTimestamp: CurrentTimestamp
@@ -43,11 +43,11 @@ function getState(type: StatusType, document?: TextDocument) {
 }
 
 function getLargeImageKey(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? IMAGE_KEYS.logo : language ? language.LanguageAsset : 'file'
+  return type === 'idle' ? IMAGE_KEYS.logo : language ? language.LanguageAsset : IMAGE_KEYS.document
 }
 
-function getLargeImageText(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? 'Idling' : language ? 'Editing a ' + language.LanguageId + ' file' : 'Editing a file'
+function getLargeImageText(type: StatusType, language?: LanguageData, document?: TextDocument) {
+  return type === 'idle' ? 'Idling' : 'Editing a ' + language ? language.LanguageId + ' file' : document.languageId
 }
 
 function getSmallImageKey(type: StatusType) {

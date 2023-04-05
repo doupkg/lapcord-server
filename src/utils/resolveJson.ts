@@ -1,9 +1,10 @@
-import type { LanguageData } from '../types'
+import type { TextDocument } from 'vscode-languageserver-textdocument'
+import { LanguageData } from '../types'
 import { extname } from 'node:path'
 import * as LanguageJSON from '../../assets/languages.json'
 
-export function resolveJson(uri: string): LanguageData | null {
-  const Extension = extname(uri) ? extname(uri) : null
-  const FileName = uri.split('/').at(-1)
+export function resolveJson(document: TextDocument): LanguageData {
+  const Extension = extname(document?.uri) ? extname(document.uri) : null
+  const FileName = document?.uri.split('/').at(-1)
   return LanguageJSON[FileName] ? { ...LanguageJSON[FileName] } : LanguageJSON[Extension] ? { ...LanguageJSON[Extension] } : null
 }
