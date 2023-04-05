@@ -10,7 +10,7 @@
     {
       "files": "*.ts",
       "options": {
-        "printWidth": 200,
+        "printWidth": 250,
         "singleAttributePerLine": false
       }
     }
