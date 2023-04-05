@@ -4,6 +4,7 @@
 
   <img alt="Discord" src="https://img.shields.io/discord/876339668956893216?label=Discord&logo=Discord">
   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/dzlib/lapcord-server/super-linter.yml?label=Build&logo=GitHub%20Actions">
+  <img alt="npm" src="https://img.shields.io/npm/v/lapcord-server?label=Lapcord&logo=npm">
   <img alt="GitHub contributors (via allcontributors.org)" src="https://img.shields.io/github/all-contributors/dzlib/lapcord-server?label=Contributors&logo=Handshake">
   <img alt="GitHub" src="https://img.shields.io/github/license/dzlib/lapcord-server?label=License&logo=GitHub">
   
