@@ -34,19 +34,19 @@ export async function setActivity(type: StatusType, document?: TextDocument) {
 }
 
 function getDetails() {
-  return 'In ' + basename(workspaceFolders[0].name)
+  return `In ${basename(workspaceFolders[0].name)}`
 }
 
 function getState(type: StatusType, document?: TextDocument) {
-  return type === 'idle' ? 'Idling' : 'Editing ' + document?.uri.split('/').at(-1)
+  return type === 'idle' ? 'Idling' : `Editing ${document?.uri.split('/').at(-1)}`
 }
 
 function getLargeImageKey(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? IMAGE_KEYS.logo : language ? language.LanguageAsset : IMAGE_KEYS.document
+  return type === 'editing' ? IMAGE_KEYS.logo : language ? language.LanguageAsset : IMAGE_KEYS.document
 }
 
 function getLargeImageText(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? 'Idling' : language ? 'Editing a ' + language.LanguageId + ' file' : 'Editing a text document'
+  return type === 'idle' ? 'Lapce' : language ? `Editing a ${language.LanguageId} file` : 'Editing a document'
 }
 
 function getSmallImageKey(type: StatusType) {
