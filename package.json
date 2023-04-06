@@ -21,6 +21,10 @@
     "type": "git",
     "url": "https://github.com/doupkg/lapcord-server.git"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
   "author": {
     "name": "Dou",
     "url": "https://github.com/doupkg"
