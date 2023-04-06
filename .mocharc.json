@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json.schemastore.org/mocharc.json",
+  "require": "@swc/register",
+  "timeout": 10000,
+  "exit": true,
+  "spec": "test/**/*.test.ts"
+}
