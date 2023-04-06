@@ -21,8 +21,6 @@ Documents.onDidChangeContent(({ document }) => {
   startTimer(document)
 })
 
-Connection.onInitialized(() => initializeServer())
-
 Connection.onInitialize((params) => {
   workspaceFolders = params.workspaceFolders
   Documents.listen(Connection)
@@ -40,9 +38,11 @@ Connection.onInitialize((params) => {
   }
 })
 
-process.on('unhandledRejection', (e) => {
-  sendNotification('Error: ' + e, MessageType.Error)
-  workDoneProgress.report('Error')
-})
+Connection.onInitialized(() => initializeServer())
 
 Connection.listen()
+
+process.on('unhandledRejection', (e) => {
+  sendNotification(`Error: ${e}`, MessageType.Error)
+  workDoneProgress.report('Error')
+})
