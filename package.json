@@ -1,6 +1,6 @@
 {
   "name": "@doupkg/lapcord-server",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Module required to run Lapcord.",
   "main": "dist/server.js",
   "packageManager": "yarn@1.22.19",
