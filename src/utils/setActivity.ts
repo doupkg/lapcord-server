@@ -34,7 +34,7 @@ export async function setActivity(type: StatusType, document?: TextDocument) {
 }
 
 function getDetails() {
-  return `In ${basename(workspaceFolders[0].name)}`
+  return `In ${basename(decodeURIComponent(workspaceFolders[0].name))}`
 }
 
 function getState(type: StatusType, document?: TextDocument) {
