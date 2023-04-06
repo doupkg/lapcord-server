@@ -6,8 +6,7 @@ import { basename } from 'node:path'
 import { MessageType } from 'vscode-languageserver'
 import { CurrentTimestamp } from '../server'
 import { resolveJson } from './resolveJson'
-import { sendNotification } from './sendNotification'
-import { Ninth } from './initializeServer'
+import { sendNotification, Ninth } from './index'
 
 export async function setActivity(type: StatusType, document?: TextDocument) {
   let language: LanguageData

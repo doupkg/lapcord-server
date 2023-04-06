@@ -1,6 +1,6 @@
 import type { TextDocument } from 'vscode-languageserver-textdocument'
-import { LanguageData } from '../types'
 import { extname } from 'node:path'
+import { LanguageData } from '../types'
 import * as LanguageJSON from '../../assets/languages.json'
 
 export function resolveJson(document: TextDocument): LanguageData {
