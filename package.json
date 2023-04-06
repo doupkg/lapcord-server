@@ -9,7 +9,6 @@
     "build": "swc src -d dist --copy-files",
     "lint": "rome check src",
     "format": "rome format src --semicolons as-needed --quote-style single",
-    "install": "yarn install",
     "clean:lock": "node scripts/removeLock.cjs"
   },
   "bin": {
