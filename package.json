@@ -1,8 +1,7 @@
 {
   "name": "lapcord",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Module required to run Lapcord.",
-  "main": "dist/server.js",
   "packageManager": "yarn@1.22.19",
   "scripts": {
     "test": "mocha",
