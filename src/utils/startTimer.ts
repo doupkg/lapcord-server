@@ -12,5 +12,5 @@ export function startTimer(document: TextDocument, time?: number) {
   timerId = setTimeout(async () => {
     if (Documents.get(document.uri)) setActivity('idle')
     if (existsSync(LockFile)) unlink(LockFile)
-  }, time || 10000)
+  }, time || 1 * 60000)
 }

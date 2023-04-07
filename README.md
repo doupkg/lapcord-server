@@ -23,6 +23,7 @@
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Support](#support)
 - [Contributors](#contributors)
+- [Credits](#credits)
 
 ## Getting Started
 First of all to start using Lapcord you will have to install its extension in Lapce, which is available at [plugins.lapce.dev](https://plugins.lapce.dev).
@@ -41,11 +42,11 @@ To check it run `lapcord`. If it finds the command is because it is installed co
 
 ### Using Lapcord
 
-By logic you've to open Lapce and have a Discord session open on your desktop for the server to start and connect to Discord through a presence.
+By logic you have to open Lapce and have a Discord session open on your desktop for the server to start and initialize the presence.
 
 Now your Discord profile should display a presence like this:
 
-![](https://i.imgur.com/XBhlwMV.png)
+<img src='https://i.imgur.com/XBhlwMV.png' alt='discord-rpc' />
 
 ###### If you do not have a Discord session on your desktop, Lapcord will show a notification in Lapce indicating that an error has occurred.
 
@@ -77,7 +78,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/DexSlender"><img src="https://avatars.githubusercontent.com/u/91853649?v=4?s=100" width="100px;" alt="DexSlender"/><br /><sub><b>DexSlender</b></sub></a><br /><a href="https://github.com/doupkg/lapcord-server/commits?author=DexSlender" title="Code">💻</a> <a href="#ideas-DexSlender" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/doupkg/lapcord-server/commits?author=DexSlender" title="Tests">⚠️</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://t.me/hyduez"><img src="https://avatars.githubusercontent.com/u/79933487?v=4?s=100" width="100px;" alt="Paulo"/><br /><sub><b>Paulo</b></sub></a><br /><a href="#maintenance-Hyduez" title="Maintenance">🚧</a> <a href="#ideas-Hyduez" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://matrix.to/#/@paulo:envs.net"><img src="https://avatars.githubusercontent.com/u/79933487?v=4?s=100" width="100px;" alt="Paulo"/><br /><sub><b>Paulo</b></sub></a><br /><a href="https://github.com/doupkg/lapcord-server/commits?author=hyduez" title="Code">💻</a> <a href="#maintenance-Hyduez" title="Maintenance">🚧</a> <a href="#ideas-Hyduez" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.jesusale.cf/"><img src="https://avatars.githubusercontent.com/u/54212600?v=4?s=100" width="100px;" alt="Jesus Alejandro"/><br /><sub><b>Jesus Alejandro</b></sub></a><br /><a href="https://github.com/doupkg/lapcord-server/commits?author=jesus-ale43" title="Code">💻</a> <a href="#design-jesus-ale43" title="Design">🎨</a> <a href="https://github.com/doupkg/lapcord-server/commits?author=jesus-ale43" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
@@ -87,3 +88,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## Credits
+- [smokes/vscode-discord-assets](https://github.com/smokes/vscode-discord-assets): for the icons.
+- [xhayper/discord-rpc](https://github.com/xhayper/discord-rpc): for the RPC client.
