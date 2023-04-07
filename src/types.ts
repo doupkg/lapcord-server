@@ -1,7 +1,8 @@
 export enum IMAGE_KEYS {
-  logo = 'lapce',
-  idle = 'idle',
-  document = 'document'
+  LOGO = 'lapce',
+  IDLE = 'idle',
+  KEYBOARD = 'keyboard_idling',
+  TEXT = 'text'
 }
 
 export interface LanguageData {

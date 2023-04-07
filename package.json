@@ -8,8 +8,8 @@
     "build": "swc src -d dist --copy-files",
     "lint": "rome check src",
     "lint:fix": "rome check --apply src",
-    "format": "rome format src --semicolons as-needed --quote-style single",
-    "format:fix": "rome format --write src --semicolons as-needed --quote-style single",
+    "format": "rome format src --semicolons as-needed --quote-style single --trailing-comma none",
+    "format:fix": "rome format --write src --semicolons as-needed --quote-style single --trailing-comma none",
     "clean:lock": "node scripts/removeLock.cjs"
   },
   "bin": {

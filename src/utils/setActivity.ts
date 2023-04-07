@@ -27,29 +27,35 @@ export async function setActivity(type: StatusType, document?: TextDocument) {
     startTimestamp: CurrentTimestamp
   }
 
-  return Ninth.user?.setActivity(activityObject)
+  return Ninth.user.setActivity(activityObject)
 }
 
 function getDetails() {
-  return `In ${basename(decodeURIComponent(workspaceFolders[0].name))}`
+  const str = basename(decodeURIComponent(workspaceFolders[0].name))
+  return `In ${sliceString(str)}`
 }
 
 function getState(type: StatusType, document?: TextDocument) {
-  return type === 'idle' ? 'Idling' : `Editing ${document?.uri.split('/').at(-1)}`
+  const str = decodeURIComponent(document.uri.split('/').at(-1))
+  return type === 'idle' ? 'Idling' : `Editing ${sliceString(str)}`
 }
 
 function getLargeImageKey(type: StatusType, language?: LanguageData) {
-  return type === 'editing' ? IMAGE_KEYS.logo : language ? language.LanguageAsset : IMAGE_KEYS.document
+  return type === 'idle' ? IMAGE_KEYS.KEYBOARD : language ? language.LanguageAsset : IMAGE_KEYS.TEXT
 }
 
 function getLargeImageText(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? 'Lapce' : language ? `Editing a ${language.LanguageId} file` : 'Editing a file'
+  return type === 'idle' ? 'Lapce' : language ? `Editing a ${language.LanguageId} file` : 'Editing a Text document'
 }
 
 function getSmallImageKey(type: StatusType) {
-  return type === 'idle' ? IMAGE_KEYS.idle : IMAGE_KEYS.logo
+  return type === 'idle' ? IMAGE_KEYS.IDLE : IMAGE_KEYS.LOGO
 }
 
 function getSmallImageText(type: StatusType) {
   return type === 'idle' ? 'Idle' : 'Lapce'
+}
+
+function sliceString(ctx: string) {
+  return ctx.length > 128 ? `${ctx.slice(0, 125)}...` : ctx
 }
