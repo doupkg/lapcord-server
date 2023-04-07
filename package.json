@@ -1,6 +1,6 @@
 {
   "name": "lapcord",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Module required to run Lapcord.",
   "packageManager": "yarn@1.22.19",
   "scripts": {
