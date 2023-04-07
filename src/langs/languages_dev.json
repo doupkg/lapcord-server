@@ -1,0 +1,590 @@
+{
+  "$schema": "./schema.json",
+
+  ".ahk": {
+    "LanguageId": "AutoHotKey",
+    "LanguageAsset": "ahk"
+  },
+  ".android": {
+    "LanguageId": "Android",
+    "LanguageAsset": "android"
+  },
+
+  ".applescript": {
+    "LanguageId": "AppleScript",
+    "LanguageAsset": "applescript"
+  },
+  ".scpt": {
+    "LanguageId": "AppleScript",
+    "LanguageAsset": "applescript"
+  },
+  ".scptd": {
+    "LanguageId": "AppleScript",
+    "LanguageAsset": "applescript"
+  },
+
+  ".ino": {
+    "LanguageId": "Arduino",
+    "LanguageAsset": "arduino"
+  },
+
+  ".asp": {
+    "LanguageId": "Active Server Pages",
+    "LanguageAsset": "asp"
+  },
+  ".aspx": {
+    "LanguageId": "Active Server Pages",
+    "LanguageAsset": "asp"
+  },
+
+  ".asm": {
+    "LanguageId": "Assembly",
+    "LanguageAsset": "assembly"
+  },
+  ".s": {
+    "LanguageId": "Assembly",
+    "LanguageAsset": "assembly"
+  },
+  ".inc": {
+    "LanguageId": "Assembly",
+    "LanguageAsset": "assembly"
+  },
+  ".wla": {
+    "LanguageId": "Assembly",
+    "LanguageAsset": "assembly"
+  },
+  ".src": {
+    "LanguageId": "Assembly",
+    "LanguageAsset": "assembly"
+  },
+
+  ".babelrc": {
+    "LanguageId": "Babel",
+    "LanguageAsset": "babel"
+  },
+  ".babelrc.json": {
+    "LanguageId": "Babel",
+    "LanguageAsset": "babel"
+  },
+  ".babelrc.js": {
+    "LanguageId": "Babel",
+    "LanguageAsset": "babel"
+  },
+  ".babelrc.cjs": {
+    "LanguageId": "Babel",
+    "LanguageAsset": "babel"
+  },
+  ".babelrc.mjs": {
+    "LanguageId": "Babel",
+    "LanguageAsset": "babel"
+  },
+  ".babelrc.cts": {
+    "LanguageId": "Babel",
+    "LanguageAsset": "babel"
+  },
+
+  ".sh": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bashrc": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_profile": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_logout": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_history": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_aliases": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_functions": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_completion": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".inputrc": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_login": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".profile": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_logout-ssh": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_logout-local": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_logout-netlogon": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+  ".bash_logout-samba": {
+    "LanguageId": "Bash",
+    "LanguageAsset": "shell"
+  },
+
+  ".bat": {
+    "LanguageId": "Bat",
+    "LanguageAsset": "bat"
+  },
+  ".c": {
+    "LanguageId": "C",
+    "LanguageAsset": "c"
+  },
+
+  "cargo.lock": {
+    "LanguageId": "Cargo",
+    "LanguageAsset": "cargo"
+  },
+  "cargo.toml": {
+    "LanguageId": "Cargo",
+    "LanguageAsset": "cargo"
+  },
+
+  ".clojure": {
+    "LanguageId": "Clojure",
+    "LanguageAsset": "clojure"
+  },
+  ".clj": {
+    "LanguageId": "Clojure",
+    "LanguageAsset": "clojure"
+  },
+  ".cljs": {
+    "LanguageId": "ClojureScript",
+    "LanguageAsset": "clojure"
+  },
+  ".cljc": {
+    "LanguageId": "Clojure/ClojureScript",
+    "LanguageAsset": "clojure"
+  },
+  ".cljx": {
+    "LanguageId": "Clojure/ClojureScript",
+    "LanguageAsset": "clojure"
+  },
+  ".edn": {
+    "LanguageId": "EDN",
+    "LanguageAsset": "clojure"
+  },
+  ".boot": {
+    "LanguageId": "Boot",
+    "LanguageAsset": "clojure"
+  },
+  ".leiningen": {
+    "LanguageId": "Leiningen",
+    "LanguageAsset": "clojure"
+  },
+  ".lein": {
+    "LanguageId": "Leiningen",
+    "LanguageAsset": "clojure"
+  },
+
+  ".cmake": {
+    "LanguageId": "Cmake",
+    "LanguageAsset": ""
+  },
+  ".codeclimate": {
+    "LanguageId": "Codeclimate",
+    "LanguageAsset": ""
+  },
+  ".coffee": {
+    "LanguageId": "Coffee",
+    "LanguageAsset": ""
+  },
+  ".cpp": {
+    "LanguageId": "Cpp",
+    "LanguageAsset": ""
+  },
+  ".crystal": {
+    "LanguageId": "Crystal",
+    "LanguageAsset": ""
+  },
+  ".csharp": {
+    "LanguageId": "Csharp",
+    "LanguageAsset": ""
+  },
+  ".cshtml": {
+    "LanguageId": "Cshtml",
+    "LanguageAsset": ""
+  },
+  ".css": {
+    "LanguageId": "Css",
+    "LanguageAsset": ""
+  },
+  ".cssmap": {
+    "LanguageId": "Cssmap",
+    "LanguageAsset": ""
+  },
+  ".cuda": {
+    "LanguageId": "Cuda",
+    "LanguageAsset": ""
+  },
+  ".d": {
+    "LanguageId": "D",
+    "LanguageAsset": ""
+  },
+  ".dart": {
+    "LanguageId": "Dart",
+    "LanguageAsset": ""
+  },
+  ".dm": {
+    "LanguageId": "Dm",
+    "LanguageAsset": ""
+  },
+  ".docker": {
+    "LanguageId": "Docker",
+    "LanguageAsset": ""
+  },
+  ".editorconfig": {
+    "LanguageId": "Editorconfig",
+    "LanguageAsset": ""
+  },
+  ".ejs": {
+    "LanguageId": "Ejs",
+    "LanguageAsset": ""
+  },
+  ".ex": {
+    "LanguageId": "Elixir",
+    "LanguageAsset": ""
+  },
+  ".elm": {
+    "LanguageId": "Elm",
+    "LanguageAsset": ""
+  },
+  ".env": {
+    "LanguageId": "Env",
+    "LanguageAsset": ""
+  },
+  ".erlang": {
+    "LanguageId": "Erlang",
+    "LanguageAsset": ""
+  },
+  ".eslint": {
+    "LanguageId": "ESLint",
+    "LanguageAsset": ""
+  },
+  ".firebase": {
+    "LanguageId": "Firebase",
+    "LanguageAsset": ""
+  },
+  ".flowconfig": {
+    "LanguageId": "Flow",
+    "LanguageAsset": ""
+  },
+  ".fsharp": {
+    "LanguageId": "F#",
+    "LanguageAsset": ""
+  },
+  ".gatsbyjs": {
+    "LanguageId": "Gatsby",
+    "LanguageAsset": ""
+  },
+  ".gemfile": {
+    "LanguageId": "Ruby",
+    "LanguageAsset": "Gemfile"
+  },
+  ".git": {
+    "LanguageId": "Git",
+    "LanguageAsset": ""
+  },
+  ".go": {
+    "LanguageId": "Go",
+    "LanguageAsset": ""
+  },
+  ".gradle": {
+    "LanguageId": "Gradle",
+    "LanguageAsset": ""
+  },
+  ".graphql": {
+    "LanguageId": "GraphQL",
+    "LanguageAsset": ""
+  },
+  ".haskell": {
+    "LanguageId": "Haskell",
+    "LanguageAsset": ""
+  },
+  ".haxe": {
+    "LanguageId": "Haxe",
+    "LanguageAsset": ""
+  },
+  ".heroku": {
+    "LanguageId": "Heroku",
+    "LanguageAsset": ""
+  },
+  ".html": {
+    "LanguageId": "HTML",
+    "LanguageAsset": ""
+  },
+  ".http": {
+    "LanguageId": "HTTP",
+    "LanguageAsset": ""
+  },
+  ".idle_keyboard": {
+    "LanguageId": "Idle (Keyboard)",
+    "LanguageAsset": ""
+  },
+  ".idle_moon": {
+    "LanguageId": "Idle (Moonscript)",
+    "LanguageAsset": ""
+  },
+  ".jar": {
+    "LanguageId": "Java",
+    "LanguageAsset": "JAR"
+  },
+  ".java": {
+    "LanguageId": "Java",
+    "LanguageAsset": ""
+  },
+  ".javascript": {
+    "LanguageId": "JavaScript",
+    "LanguageAsset": ""
+  },
+  ".jest": {
+    "LanguageId": "Jest",
+    "LanguageAsset": ""
+  },
+  ".jsmap": {
+    "LanguageId": "JavaScript (source map)",
+    "LanguageAsset": ""
+  },
+  ".json": {
+    "LanguageId": "JSON",
+    "LanguageAsset": ""
+  },
+  ".jsx": {
+    "LanguageId": "React JSX",
+    "LanguageAsset": ""
+  },
+  ".julia": {
+    "LanguageId": "Julia",
+    "LanguageAsset": ""
+  },
+  ".kotlin": {
+    "LanguageId": "Kotlin",
+    "LanguageAsset": ""
+  },
+  ".less": {
+    "LanguageId": "Less",
+    "LanguageAsset": ""
+  },
+  ".lisp": {
+    "LanguageId": "Lisp",
+    "LanguageAsset": ""
+  },
+  ".livescript": {
+    "LanguageId": "LiveScript",
+    "LanguageAsset": ""
+  },
+  ".log": {
+    "LanguageId": "Log",
+    "LanguageAsset": ""
+  },
+  ".lua": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".makefile": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".manifest": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".md": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".mdx": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".marko": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".nim": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".nodemon.json": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".npmignore": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".m": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".ml": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".pas": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".pwn": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".pl": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".php": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".postcssrc": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".ps1": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".prettierrc": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".prisma": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".pug": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".purs": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".py": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".r": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".re": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".rb": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".rs": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".scala": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".scss": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".sql": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".styl": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".svg": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".swift": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".tex": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".txt": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".toml": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".travis.yml": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".tsx": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".twig": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".ts": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".vb": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".vba": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".vue": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".wasm": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".webpack.config.js": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".xml": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".yaml": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  },
+  ".yarn.lock": {
+    "LanguageId": "",
+    "LanguageAsset": ""
+  }
+}
