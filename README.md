@@ -42,7 +42,7 @@ To check it run `lapcord`. If it finds the command is because it is installed co
 
 ### Using Lapcord
 
-By logic you've to open Lapce and have a Discord session open on your desktop for the server to start and connect to Discord through a presence.
+By logic you have to open Lapce and have a Discord session open on your desktop for the server to start and initialize the presence.
 
 Now your Discord profile should display a presence like this:
 
