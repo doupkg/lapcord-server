@@ -1,16 +1,72 @@
-<h1 align='center'> Lapcord-server </h1>
+<div align='center'>
+  <a href="https://plugins.lapce.dev/plugins/Hyduez/dou.lapcord">
+    <img width="200" src="assets/logo.png">
+  </a>
+  <h1> Lapcord-server </h1>
+</div>
 
 <div align='center'>
 
   <img alt="Discord" src="https://img.shields.io/discord/876339668956893216?label=Discord&logo=Discord">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/doupkg/lapcord-server/super-linter.yml?label=Build&logo=GitHub%20Actions">
-  <img alt="npm" src="https://img.shields.io/npm/v/lapcord-server?label=Lapcord&logo=npm">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/doupkg/lapcord-server/github-packages.yml?label=Build&logo=GitHub%20Actions">
+  <img alt="npm" src="https://img.shields.io/npm/v/lapcord?label=Lapcord&logo=npm">
   <img alt="GitHub contributors (via allcontributors.org)" src="https://img.shields.io/github/all-contributors/doupkg/lapcord-server?label=Contributors&logo=Handshake">
   <img alt="GitHub" src="https://img.shields.io/github/license/doupkg/lapcord-server?label=License&logo=GitHub">
   
 </div>
 
-## Contributors ✨
+## Table of Contents
+- [Getting Started](#getting-started)
+  - [Installing Lapcord](#installing-lapcord)
+  - [Using Lapcord](#using-lapcord)
+- [Contributing](#contributing)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Support](#support)
+- [Contributors](#contributors)
+
+## Getting Started
+First of all to start using Lapcord you will have to install its extension in Lapce, which is available at [plugins.lapce.dev](https://plugins.lapce.dev).
+
+### Installing Lapcord
+| ✨ | Type | Command |
+|----|-------|-------|
+| ✅ | NPM | `$ npm install -g lapcord` |
+| ✅ | Yarn | `$ yarn global add lapcord` |
+
+###### Make sure you have your package manager binaries installed in your system path.
+
+Now you should have the Lapcord binaries installed globally.
+
+To check it run `lapcord`. If it finds the command is because it is installed correctly, otherwise it is not.
+
+### Using Lapcord
+
+By logic you've to open Lapce and have a Discord session open on your desktop for the server to start and connect to Discord through a presence.
+
+Now your Discord profile should display a presence like this:
+
+![](https://i.imgur.com/XBhlwMV.png)
+
+###### If you do not have a Discord session on your desktop, Lapcord will show a notification in Lapce indicating that an error has occurred.
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/doupkg/lapcord-server/blob/master/CONTRIBUTING.md).
+
+## Frequently Asked Questions
+
+> “Why must it be a server?” 
+
+Because Lapce plugins are compiled in WASI, which disables several features such as the OS library. This, added to many other things, makes it impossible to realize an IPC system. So we use a server that is installed separately to connect to Lapce and to be able to interleave an IPC system correctly.
+
+> “I've read the code, it looks like you are using wrong events.”
+
+Yeah, maybe. We have tested with all the events that `vscode-languageserver` offers us, like the `Connection` and `TextDocuments` class, some of these events we decreed that they were not emitted, for some reason that we don't know. Or some simply did not work the way we expected. For example, the `onDidOpen()` event was only emitted once, so it didn't work for us. The `onDidClose()` event is not even emitted.
+
+## Support
+We are more active on Discord. [Click here](https://discord.gg/uujENVrXUC).
+
+## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
