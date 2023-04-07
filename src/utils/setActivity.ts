@@ -39,7 +39,7 @@ function getState(type: StatusType, document?: TextDocument) {
 }
 
 function getLargeImageKey(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? IMAGE_KEYS.logo : language ? language.LanguageAsset : IMAGE_KEYS.document
+  return type === 'editing' ? IMAGE_KEYS.logo : language ? language.LanguageAsset : IMAGE_KEYS.document
 }
 
 function getLargeImageText(type: StatusType, language?: LanguageData) {
