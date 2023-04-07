@@ -19,15 +19,12 @@ export async function setActivity(type: StatusType, document?: TextDocument) {
 
   const activityObject: SetActivity = {
     state: getState(type, document),
+    details: getDetails(),
     largeImageKey: getLargeImageKey(type, language),
     largeImageText: getLargeImageText(type, language),
     smallImageKey: getSmallImageKey(type),
     smallImageText: getSmallImageText(type),
     startTimestamp: CurrentTimestamp
-  }
-
-  if (type === 'editing') {
-    activityObject.details = getDetails()
   }
 
   return Ninth.user?.setActivity(activityObject)
@@ -46,7 +43,7 @@ function getLargeImageKey(type: StatusType, language?: LanguageData) {
 }
 
 function getLargeImageText(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? 'Lapce' : language ? `Editing a ${language.LanguageId} file` : 'Editing a document'
+  return type === 'idle' ? 'Lapce' : language ? `Editing a ${language.LanguageId} file` : 'Editing a file'
 }
 
 function getSmallImageKey(type: StatusType) {
