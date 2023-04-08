@@ -6,7 +6,7 @@ export enum IMAGE_KEYS {
 }
 
 export interface LanguageData {
-  LanguageId: string
+  LanguageID: string
   LanguageAsset: string
 }
 

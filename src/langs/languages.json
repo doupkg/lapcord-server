@@ -433,7 +433,7 @@
       "LanguageID": "Heroku",
       "LanguageAsset": "heroku"
     },
-    ".htacess": {
+    ".htaccess": {
       "LanguageID": "HTTP",
       "LanguageAsset": "http"
     },
@@ -476,6 +476,274 @@
     "jsconfig.json": {
       "LanguageID": "JS",
       "LanguageAsset": "js"
+    },
+    ".lessrc": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    ".lessrc.json": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    ".lessrc.js": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    ".lessrc.cjs": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    ".lessrc.mjs": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    "less.config.js": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    "less.config.cjs": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    "less.config.mjs": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    "less.config.json": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    ".luacheckrc": {
+      "LanguageID": "Lua",
+      "LanguageAsset": "lua"
+    },
+    "makefile": {
+      "LanguageID": "Makefile",
+      "LanguageAsset": "makefile"
+    },
+    "manifest.json": {
+      "LanguageID": "Manifest",
+      "LanguageAsset": "manifest"
+    },
+    ".markdown-toc": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".mdxdeck.js": {
+      "LanguageID": "MarkdownX",
+      "LanguageAsset": "markdownx"
+    },
+    ".mdxrc.js": {
+      "LanguageID": "MarkdownX",
+      "LanguageAsset": "markdownx"
+    },
+    ".mdxplugins.js": {
+      "LanguageID": "MarkdownX",
+      "LanguageAsset": "markdownx"
+    },
+    "marko.json": {
+      "LanguageID": "Marko",
+      "LanguageAsset": "marko"
+    },
+    "marko-tag.json": {
+      "LanguageID": "Marko",
+      "LanguageAsset": "marko"
+    },
+    "tests.nim.cfg": {
+      "LanguageID": "Nim",
+      "LanguageAsset": "nim"
+    },
+    "koch.cfg": {
+      "LanguageID": "Nim",
+      "LanguageAsset": "nim"
+    },
+    "nim.cfg": {
+      "LanguageID": "Nim",
+      "LanguageAsset": "nim"
+    },
+    "nimble.cfg": {
+      "LanguageID": "Nim",
+      "LanguageAsset": "nim"
+    },
+    "nodemon.json": {
+      "LanguageID": "Nodemon",
+      "LanguageAsset": "nodemon"
+    },
+    "package.json": {
+      "LanguageID": "NPM",
+      "LanguageAsset": "npm"
+    },
+    ".npmrc": {
+      "LanguageID": "NPM",
+      "LanguageAsset": "npm"
+    },
+    ".npmignore": {
+      "LanguageID": "NPM",
+      "LanguageAsset": "npm"
+    },
+    "package-lock.json": {
+      "LanguageID": "NPM",
+      "LanguageAsset": "npm"
+    },
+    ".nvmrc": {
+      "LanguageID": "NPM",
+      "LanguageAsset": "npm"
+    },
+    "npm-shrinkwrap.json": {
+      "LanguageID": "NPM",
+      "LanguageAsset": "npm"
+    },
+    "dune": {
+      "LanguageID": "OCalm",
+      "LanguageAsset": "ocalm"
+    },
+    "pawn.cfg": {
+      "LanguageID": "Pawn",
+      "LanguageAsset": "pawn"
+    },
+    "php.ini": {
+      "LanguageID": "PHP",
+      "LanguageAsset": "php"
+    },
+    "postcss.config.js": {
+      "LanguageID": "PostCSS",
+      "LanguageAsset": "postcss"
+    },
+    "postcss.config.cjs": {
+      "LanguageID": "PostCSS",
+      "LanguageAsset": "postcss"
+    },
+    "postcss.config.mjs": {
+      "LanguageID": "PostCSS",
+      "LanguageAsset": "postcss"
+    },
+    ".prettierrc": {
+      "LanguageId": "Prettier",
+      "LanguageAsset": "prettier"
+    },
+    ".prettierrc.yaml": {
+      "LanguageID": "Prettier",
+      "LanguageAsset": "prettier"
+    },
+    ".prettierignore": {
+      "LanguageId": "Prettier",
+      "LanguageAsset": "prettier"
+    },
+    "pug.config.js": {
+      "LanguageID": "Pug",
+      "LanguageAsset": "pug"
+    },
+    "pug.config.cjs": {
+      "LanguageID": "Pug",
+      "LanguageAsset": "pug"
+    },
+    "pug.config.mjs": {
+      "LanguageID": "Pug",
+      "LanguageAsset": "pug"
+    },
+    "pug.config.json": {
+      "LanguageID": "Pug",
+      "LanguageAsset": "pug"
+    },
+    "pug.config.yaml": {
+      "LanguageID": "Pug",
+      "LanguageAsset": "pug"
+    },
+    "pug.config.cson": {
+      "LanguageID": "Pug",
+      "LanguageAsset": "pug"
+    },
+    "spago.dhall": {
+      "LanguageID": "PureScript",
+      "LanguageAsset": "purescript"
+    },
+    ".rprofile": {
+      "LanguageID": "R",
+      "LanguageAsset": "r"
+    },
+    "sass.config.js": {
+      "LanguageID": "SASS",
+      "LanguageAsset": "scss"
+    },
+    "sass.config.cjs": {
+      "LanguageID": "SASS",
+      "LanguageAsset": "scss"
+    },
+    "sass.config.mjs": {
+      "LanguageID": "SASS",
+      "LanguageAsset": "scss"
+    },
+    ".bashrc": {
+      "LanguageID": "Bash",
+      "LanguageAsset": "shell"
+    },
+    ".bash_profile": {
+      "LanguageID": "Bash",
+      "LanguageAsset": "shell"
+    },
+    ".zshrc": {
+      "LanguageID": "ZSH",
+      "LanguageAsset": "shell"
+    },
+    ".stylintrc": {
+      "LanguageID": "Stylus",
+      "LanguageAsset": "stylus"
+    },
+    "texmf.cnf": {
+      "LanguageID": "Tex",
+      "LanguageAsset": "tex"
+    },
+    ".travis.yml": {
+      "LanguageID": "Travis",
+      "LanguageAsset": "travis"
+    },
+    "tsconfig.json": {
+      "LanguageAsset": "TS",
+      "LanguageID": "TS"
+    },
+    "twig.yaml": {
+      "LanguageID": "Twig",
+      "LanguageAsset": "twig"
+    },
+    "twig.yml": {
+      "LanguageID": "Twig",
+      "LanguageAsset": "twig"
+    },
+    ".vscodeignore": {
+      "LanguageID": "VSCode",
+      "LanguageAsset": "vscode-ignore"
+    },
+    "vue.config.js": {
+      "LanguageID": "Vue",
+      "LanguageAsset": "vue"
+    },
+    "vue.config.cjs": {
+      "LanguageID": "Vue",
+      "LanguageAsset": "vue"
+    },
+    "vue.config.mjs": {
+      "LanguageID": "Vue",
+      "LanguageAsset": "vue"
+    },
+    "webpack.config.js": {
+      "LanguageID": "WebPack",
+      "LanguageAsset": "webpack"
+    },
+    "webpack.config.cjs": {
+      "LanguageID": "WebPack",
+      "LanguageAsset": "webpack"
+    },
+    "webpack.config.mjs": {
+      "LanguageID": "WebPack",
+      "LanguageAsset": "webpack"
+    },
+    ".yamlrc": {
+      "LanguageID": "YAML",
+      "LanguageAsset": "yaml"
+    },
+    "yarn.lock": {
+      "LanguageID": "Yarn",
+      "LanguageAsset": "yarn"
     }
   },
   "ext_files": {
@@ -895,6 +1163,10 @@
       "LanguageID": "Haxe",
       "LanguageAsset": "haxe"
     },
+    ".htm": {
+      "LanguageID": "HTML",
+      "LanguageAsset": "html"
+    },
     ".html": {
       "LanguageID": "HTML",
       "LanguageAsset": "html"
@@ -958,6 +1230,502 @@
     ".jsx": {
       "LanguageID": "JSX",
       "LanguageAsset": "jsx"
+    },
+    ".jl": {
+      "LanguageID": "Julia",
+      "LanguageAsset": "julia"
+    },
+    ".kt": {
+      "LanguageID": "Kotlin",
+      "LanguageAsset": "kotlin"
+    },
+    ".kts": {
+      "LanguageID": "Kotlin",
+      "LanguageAsset": "kotlin"
+    },
+    ".less": {
+      "LanguageID": "Less",
+      "LanguageAsset": "less"
+    },
+    ".clinit": {
+      "LanguageID": "Lisp",
+      "LanguageAsset": "lisp"
+    },
+    ".clrc": {
+      "LanguageID": "Lisp",
+      "LanguageAsset": "lisp"
+    },
+    ".el": {
+      "LanguageID": "Lisp",
+      "LanguageAsset": "lisp"
+    },
+    ".lsp": {
+      "LanguageID": "Lisp",
+      "LanguageAsset": "lisp"
+    },
+    ".lisp": {
+      "LanguageID": "Lisp",
+      "LanguageAsset": "lisp"
+    },
+    ".ls": {
+      "LanguageID": "LiveScript",
+      "LanguageAsset": "livescript"
+    },
+    ".log": {
+      "LanguageID": "Log",
+      "LanguageAsset": "log"
+    },
+    ".lua": {
+      "LanguageID": "Lua",
+      "LanguageAsset": "lua"
+    },
+    ".luac": {
+      "LanguageID": "Lua",
+      "LanguageAsset": "lua"
+    },
+    ".ld": {
+      "LanguageID": "Lua",
+      "LanguageAsset": "lua"
+    },
+    ".luai": {
+      "LanguageID": "Lua",
+      "LanguageAsset": "lua"
+    },
+    ".wlua": {
+      "LanguageID": "Lua",
+      "LanguageAsset": "lua"
+    },
+    ".webmanifest": {
+      "LanguageID": "Manifest",
+      "LanguageAsset": "manifest"
+    },
+    ".md": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".markdown": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".mdown": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".mkd": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".mkdn": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".mdwn": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".mdtxt": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".mdtext": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".text": {
+      "LanguageID": "Markdown",
+      "LanguageAsset": "markdown"
+    },
+    ".mdx": {
+      "LanguageId": "MarkdownX",
+      "LanguageAsset": "markdownx"
+    },
+    ".marko": {
+      "LanguageID": "Marko",
+      "LanguageAsset": "marko"
+    },
+    ".nim": {
+      "LanguageID": "Nim",
+      "LanguageAsset": "nim"
+    },
+    ".nims": {
+      "LanguageID": "Nim",
+      "LanguageAsset": "nim"
+    },
+    ".nimble": {
+      "LanguageID": "Nim",
+      "LanguageAsset": "nim"
+    },
+    ".m": {
+      "LanguageID": "Obj C",
+      "LanguageAsset": "objc"
+    },
+    ".mm": {
+      "LanguageID": "Obj C++",
+      "LanguageAsset": "objc"
+    },
+    ".ml": {
+      "LanguageID": "OCalm",
+      "LanguageAsset": "ocalm"
+    },
+    ".mli": {
+      "LanguageID": "OCalm",
+      "LanguageAsset": "ocalm"
+    },
+    ".pp": {
+      "LanguageID": "Pascal",
+      "LanguageAsset": "pascal"
+    },
+    ".pas": {
+      "LanguageID": "Pascal",
+      "LanguageAsset": "pascal"
+    },
+    ".inc": {
+      "LanguageID": "Pascal",
+      "LanguageAsset": "pascal"
+    },
+    ".pwn": {
+      "LanguageID": "Pawn",
+      "LanguageAsset": "pawn"
+    },
+    ".pl": {
+      "LanguageID": "Perl",
+      "LanguageAsset": "perl"
+    },
+    ".pm": {
+      "LanguageID": "Perl",
+      "LanguageAsset": "perl"
+    },
+    ".php": {
+      "LanguageID": "PHP",
+      "LanguageAsset": "php"
+    },
+    ".phtml": {
+      "LanguageID": "PHP",
+      "LanguageAsset": "php"
+    },
+    ".php3": {
+      "LanguageID": "PHP",
+      "LanguageAsset": "php"
+    },
+    ".php4": {
+      "LanguageID": "PHP",
+      "LanguageAsset": "php"
+    },
+    ".php5": {
+      "LanguageID": "PHP",
+      "LanguageAsset": "php"
+    },
+    ".php7": {
+      "LanguageID": "PHP",
+      "LanguageAsset": "php"
+    },
+    ".pcss": {
+      "LanguageID": "PostCSS",
+      "LanguageAsset": "postcss"
+    },
+    ".postcss": {
+      "LanguageID": "PostCSS",
+      "LanguageAsset": "postcss"
+    },
+    ".ps1": {
+      "LanguageID": "PowerShell",
+      "LanguageAsset": "powershell"
+    },
+    ".psm1": {
+      "LanguageID": "PowerShell",
+      "LanguageAsset": "powershell"
+    },
+    ".psd1": {
+      "LanguageID": "PowerShell",
+      "LanguageAsset": "powershell"
+    },
+    ".pssc": {
+      "LanguageID": "PowerShell",
+      "LanguageAsset": "powershell"
+    },
+    ".psrc": {
+      "LanguageID": "PowerShell",
+      "LanguageAsset": "powershell"
+    },
+    ".prisma": {
+      "LanguageID": "Prisma",
+      "LanguageAsset": "prisma"
+    },
+    ".pug": {
+      "LanguageID": "Pug",
+      "LanguageAsset": "pug"
+    },
+    ".purs": {
+      "LanguageID": "PureScript",
+      "LanguageAsset": "purescript"
+    },
+    ".py": {
+      "LanguageId": "Python",
+      "LanguageAsset": "python"
+    },
+    ".pyi": {
+      "LanguageId": "Python",
+      "LanguageAsset": "python"
+    },
+    ".pyc": {
+      "LanguageId": "Python",
+      "LanguageAsset": "python"
+    },
+    ".pyd": {
+      "LanguageId": "Python",
+      "LanguageAsset": "python"
+    },
+    ".pyw": {
+      "LanguageId": "Python",
+      "LanguageAsset": "python"
+    },
+    ".pyz": {
+      "LanguageId": "Python",
+      "LanguageAsset": "python"
+    },
+    ".pyo": {
+      "LanguageId": "Python",
+      "LanguageAsset": "python"
+    },
+    ".r": {
+      "LanguageID": "R",
+      "LanguageAsset": "r"
+    },
+    ".rdata": {
+      "LanguageID": "R",
+      "LanguageAsset": "r"
+    },
+    ".rhistory": {
+      "LanguageID": "R",
+      "LanguageAsset": "r"
+    },
+    ".rproj": {
+      "LanguageID": "R",
+      "LanguageAsset": "r"
+    },
+    ".rds": {
+      "LanguageID": "R",
+      "LanguageAsset": "r"
+    },
+    ".re": {
+      "LanguageID": "ReasonML",
+      "LanguageAsset": "reasonml"
+    },
+    ".rei": {
+      "LanguageID": "ReasonML",
+      "LanguageAsset": "reasonml"
+    },
+    ".rb": {
+      "LanguageID": "Ruby",
+      "LanguageAsset": "ruby"
+    },
+    ".gemspec": {
+      "LanguageID": "Ruby",
+      "LanguageAsset": "ruby"
+    },
+    ".erb": {
+      "LanguageID": "Ruby",
+      "LanguageAsset": "ruby"
+    },
+    ".rs": {
+      "LanguageID": "Rust",
+      "LanguageAsset": "rust"
+    },
+    ".rlib": {
+      "LanguageID": "Rust",
+      "LanguageAsset": "rust"
+    },
+    ".scala": {
+      "LanguageID": "Scala",
+      "LanguageAsset": "scala"
+    },
+    ".sdt": {
+      "LanguageID": "Scala",
+      "LanguageAsset": "scala"
+    },
+    ".sc": {
+      "LanguageID": "Scala",
+      "LanguageAsset": "scala"
+    },
+    ".scss": {
+      "LanguageID": "SCSS",
+      "LanguageAsset": "scss"
+    },
+    ".sass": {
+      "LanguageID": "SASS",
+      "LanguageAsset": "scss"
+    },
+    ".sh": {
+      "LanguageID": "Script",
+      "LanguageAsset": "shell"
+    },
+    ".bash": {
+      "LanguageID": "Bash",
+      "LanguageAsset": "shell"
+    },
+    ".sql": {
+      "LanguageID": "SQL",
+      "LanguageAsset": "sql"
+    },
+    ".sqlpp": {
+      "LanguageID": "SQL",
+      "LanguageAsset": "sql"
+    },
+    ".psql": {
+      "LanguageID": "SQL",
+      "LanguageAsset": "sql"
+    },
+    ".pgsql": {
+      "LanguageID": "SQL",
+      "LanguageAsset": "sql"
+    },
+    ".mysql": {
+      "LanguageID": "SQL",
+      "LanguageAsset": "sql"
+    },
+    ".sqlite": {
+      "LanguageID": "SQL",
+      "LanguageAsset": "sql"
+    },
+    ".mssql": {
+      "LanguageID": "SQL",
+      "LanguageAsset": "sql"
+    },
+    ".styl": {
+      "LanguageID": "Stylus",
+      "LanguageAsset": "stylus"
+    },
+    ".stylus": {
+      "LanguageID": "Stylus",
+      "LanguageAsset": "stylus"
+    },
+    ".svg": {
+      "LanguageID": "SVG",
+      "LanguageAsset": "svg"
+    },
+    ".svgz": {
+      "LanguageID": "SVG",
+      "LanguageAsset": "svg"
+    },
+    ".swift": {
+      "LanguageID": "Swift",
+      "LanguageAsset": "swift"
+    },
+    ".tex": {
+      "LanguageID": "Tex",
+      "LanguageAsset": "tex"
+    },
+    ".sty": {
+      "LanguageID": "Tex",
+      "LanguageAsset": "tex"
+    },
+    ".cls": {
+      "LanguageID": "Tex",
+      "LanguageAsset": "tex"
+    },
+    ".bib": {
+      "LanguageID": "Tex",
+      "LanguageAsset": "tex"
+    },
+    ".toml": {
+      "LanguageID": "TOML",
+      "LanguageAsset": "toml"
+    },
+    ".ts": {
+      "LanguageID": "TS",
+      "LanguageAsset": "ts"
+    },
+    ".tsx": {
+      "LanguageID": "TSX",
+      "LanguageAsset": "tsx"
+    },
+    ".twig": {
+      "LanguageID": "Twig",
+      "LanguageAsset": "twig"
+    },
+    ".html.twig": {
+      "LanguageID": "Twig",
+      "LanguageAsset": "twig"
+    },
+    ".txt": {
+      "LanguageID": "TXT",
+      "LanguageAsset": "txt"
+    },
+    ".d.ts": {
+      "LanguageID": "D.TS",
+      "LanguageAsset": "typescript-def"
+    },
+    ".vb": {
+      "LanguageID": "Basic",
+      "LanguageAsset": "vb"
+    },
+    ".vbs": {
+      "LanguageID": "Basic",
+      "LanguageAsset": "vb"
+    },
+    ".bas": {
+      "LanguageID": "Basic",
+      "LanguageAsset": "vb"
+    },
+    ".cls": {
+      "LanguageID": "Basic",
+      "LanguageAsset": "vb"
+    },
+    ".frm": {
+      "LanguageID": "Basic",
+      "LanguageAsset": "vb"
+    },
+    ".ctl": {
+      "LanguageID": "Basic",
+      "LanguageAsset": "vb"
+    },
+    ".dsr": {
+      "LanguageID": "Basic",
+      "LanguageAsset": "vb"
+    },
+    ".vba": {
+      "LanguageID": "Basic App",
+      "LanguageAsset": "vba"
+    },
+    ".vcxproj": {
+      "LanguageID": "VCXPROJ",
+      "LanguageAsset": "vcxproj"
+    },
+    ".vue": {
+      "LanguageID": "Vue",
+      "LanguageAsset": "vue"
+    },
+    ".wasm": {
+      "LanguageID": "WASM",
+      "LanguageAsset": "wasm"
+    },
+    ".wat": {
+      "LanguageID": "WASM",
+      "LanguageAsset": "wasm"
+    },
+    ".xml": {
+      "LanguageID": "XML",
+      "LanguageAsset": "xml"
+    },
+    ".xsd": {
+      "LanguageID": "XML",
+      "LanguageAsset": "xml"
+    },
+    ".xsl": {
+      "LanguageID": "XML",
+      "LanguageAsset": "xml"
+    },
+    ".xslt": {
+      "LanguageID": "XML",
+      "LanguageAsset": "xml"
+    },
+    ".yaml": {
+      "LanguageID": "YAML",
+      "LanguageAsset": "yaml"
+    },
+    ".yml": {
+      "LanguageID": "YAML",
+      "LanguageAsset": "yaml"
     }
   }
 }

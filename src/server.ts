@@ -55,8 +55,15 @@ Connection.onInitialized(() => initializeServer())
 
 Connection.listen()
 
-Connection.onExit(async () => await Ninth.destroy())
-Connection.onShutdown(async () => await Ninth.destroy())
+Connection.onExit(async () => {
+  await workDoneProgress.done()
+  await Ninth.destroy()
+})
+
+Connection.onShutdown(async () => {
+  await workDoneProgress.done()
+  await Ninth.destroy()
+})
 
 process.on('unhandledRejection', (e) => {
   sendNotification(`Error: ${e}`, 1)
