@@ -2,175 +2,183 @@
   "$schema": "./schema.json",
   "config_files": {
     "angular.json": {
-      "LanguageId": "Angular",
+      "LanguageID": "Angular",
       "LanguageAsset": "angular"
     },
     ".appveyor.yml": {
-      "LanguageId": "AppVeyor",
+      "LanguageID": "AppVeyor",
       "LanguageAsset": "appveyor"
     },
     ".babelrc": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     ".babelignore": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     ".babelrc.json": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     ".babelrc.js": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     ".babelrc.cjs": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     ".babelrc.mjs": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     ".babelrc.cts": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     "babel.config.json": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     "babel.config.js": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     "babel.config.cjs": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
+      "LanguageAsset": "babel"
+    },
+    "babel.config.mjs": {
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     "babel.config.cts": {
-      "LanguageId": "Babel",
+      "LanguageID": "Babel",
       "LanguageAsset": "babel"
     },
     "cargo.lock": {
-      "LanguageId": "Cargo",
+      "LanguageID": "Cargo",
       "LanguageAsset": "cargo"
     },
     "cargo.toml": {
-      "LanguageId": "Cargo",
+      "LanguageID": "Cargo",
       "LanguageAsset": "cargo"
     },
     "CMakeLists.txt": {
-      "LanguageId": "CMake",
+      "LanguageID": "CMake",
       "LanguageAsset": "cmake"
     },
     ".codeclimate.yml": {
-      "LanguageId": "CodeClimate",
+      "LanguageID": "CodeClimate",
       "LanguageAsset": "codeclimate"
     },
     ".codeclimate.json": {
-      "LanguageId": "CodeClimate",
+      "LanguageID": "CodeClimate",
       "LanguageAsset": "codeclimate"
     },
     "Cakefile": {
-      "LanguageId": "CoffeeScript",
+      "LanguageID": "CoffeeScript",
       "LanguageAsset": "coffeescript"
     },
     ".coffeelintignore": {
-      "LanguageId": "CoffeeScript",
+      "LanguageID": "CoffeeScript",
       "LanguageAsset": "coffeescript"
     },
     ".coffeelint.json": {
-      "LanguageId": "CoffeeScript",
+      "LanguageID": "CoffeeScript",
       "LanguageAsset": "coffeescript"
     },
     ".coffeeignore": {
-      "LanguageId": "CoffeeScript",
+      "LanguageID": "CoffeeScript",
       "LanguageAsset": "coffeescript"
     },
     ".crignore": {
-      "LanguageId": "Crystal",
+      "LanguageID": "Crystal",
       "LanguageAsset": "crystal"
     },
     "dub.json": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     "dub.sdl": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     "rdmd.conf": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     "sc.ini": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     ".dartignore": {
-      "LanguageId": "Dart",
+      "LanguageID": "Dart",
       "LanguageAsset": "dart"
     },
     ".metadata": {
-      "LanguageId": "Dart",
+      "LanguageID": "Dart",
       "LanguageAsset": "dart"
     },
     "pubspec.lock": {
-      "LanguageId": "Dart",
+      "LanguageID": "Dart",
       "LanguageAsset": "dart"
     },
     "pubspec.yaml": {
-      "LanguageId": "Dart",
+      "LanguageID": "Dart",
       "LanguageAsset": "dart"
     },
     ".dmconfig": {
-      "LanguageId": "DreamMaker",
+      "LanguageID": "DreamMaker",
       "LanguageAsset": "dm"
     },
     ".dockerignore": {
-      "LanguageId": "Docker Ignore",
+      "LanguageID": "Docker Ignore",
       "LanguageAsset": "dockerignore"
     },
     "dockerfile": {
-      "LanguageId": "Docker",
+      "LanguageID": "Docker",
       "LanguageAsset": "docker"
     },
     "docker-compose.yml": {
-      "LanguageId": "Docker",
+      "LanguageID": "Docker",
       "LanguageAsset": "docker"
     },
     "docker-compose.yaml": {
-      "LanguageId": "Docker",
+      "LanguageID": "Docker",
       "LanguageAsset": "docker"
     },
     ".editorconfig": {
-      "LanguageId": "EditorConfig",
+      "LanguageID": "EditorConfig",
       "LanguageAsset": "editorconfig"
     },
     ".ejsrc": {
-      "LanguageId": "EJS",
+      "LanguageID": "EJS",
       "LanguageAsset": "ejs"
     },
     ".ejslintrc": {
-      "LanguageId": "EJS",
+      "LanguageID": "EJS",
       "LanguageAsset": "ejs"
     },
     ".ejs.config.js": {
-      "LanguageId": "EJS",
+      "LanguageID": "EJS",
       "LanguageAsset": "ejs"
     },
     ".ejs.config.cjs": {
-      "LanguageId": "EJS",
+      "LanguageID": "EJS",
+      "LanguageAsset": "ejs"
+    },
+    ".ejs.config.mjs": {
+      "LanguageID": "EJS",
       "LanguageAsset": "ejs"
     },
     ".ejs.config.json": {
-      "LanguageId": "EJS",
+      "LanguageID": "EJS",
       "LanguageAsset": "ejs"
     },
     "elm.json": {
-      "LanguageId": "Elm",
+      "LanguageID": "Elm",
       "LanguageAsset": "elm"
     },
     ".env": {
@@ -198,67 +206,71 @@
       "LanguageAsset": "env"
     },
     "emakefile": {
-      "LanguageId": "Erlang",
+      "LanguageID": "Erlang",
       "LanguageAsset": "erlang"
     },
     "rebar.config": {
-      "LanguageId": "Erlang",
+      "LanguageID": "Erlang",
       "LanguageAsset": "erlang"
     },
     "rebar.config.script": {
-      "LanguageId": "Erlang",
+      "LanguageID": "Erlang",
       "LanguageAsset": "erlang"
     },
     ".eslintrc.json": {
-      "LanguageId": "ESLint Configuration",
+      "LanguageID": "ESLint Configuration",
       "LanguageAsset": "eslint-config"
     },
     ".eslintrc.js": {
-      "LanguageId": "ESLint Configuration",
+      "LanguageID": "ESLint Configuration",
       "LanguageAsset": "eslint-config"
     },
     ".eslintrc.cjs": {
-      "LanguageId": "ESLint Configuration",
+      "LanguageID": "ESLint Configuration",
+      "LanguageAsset": "eslint-config"
+    },
+    ".eslintrc.mjs": {
+      "LanguageID": "ESLint Configuration",
       "LanguageAsset": "eslint-config"
     },
     ".eslintrc.yml": {
-      "LanguageId": "ESLint Configuration",
+      "LanguageID": "ESLint Configuration",
       "LanguageAsset": "eslint-config"
     },
     ".eslintrc.yaml": {
-      "LanguageId": "ESLint Configuration",
+      "LanguageID": "ESLint Configuration",
       "LanguageAsset": "eslint-config"
     },
     ".eslintignore": {
-      "LanguageId": "ESLint Ignore File",
+      "LanguageID": "ESLint Ignore File",
       "LanguageAsset": "eslint-ignore"
     },
     ".eslintcache": {
-      "LanguageId": "ESLint Cache File",
+      "LanguageID": "ESLint Cache File",
       "LanguageAsset": "eslint-cache"
     },
     ".firebaserc": {
-      "LanguageId": "Firebase",
+      "LanguageID": "Firebase",
       "LanguageAsset": "firebase"
     },
     "firebase.json": {
-      "LanguageId": "Firebase",
+      "LanguageID": "Firebase",
       "LanguageAsset": "firebase"
     },
     "database.rules.json": {
-      "LanguageId": "Firebase",
+      "LanguageID": "Firebase",
       "LanguageAsset": "firebase"
     },
     "firestore.indexes.json": {
-      "LanguageId": "Firebase",
+      "LanguageID": "Firebase",
       "LanguageAsset": "firebase"
     },
     "firestore.rules": {
-      "LanguageId": "Firebase",
+      "LanguageID": "Firebase",
       "LanguageAsset": "firebase"
     },
     "storage.rules": {
-      "LanguageId": "Firebase",
+      "LanguageID": "Firebase",
       "LanguageAsset": "firebase"
     },
     ".flowconfig": {
@@ -266,19 +278,19 @@
       "LanguageAsset": "flow"
     },
     "gatsby-config.js": {
-      "LanguageId": "Gatsby",
+      "LanguageID": "Gatsby",
       "LanguageAsset": "gatsby"
     },
     "gatsby-node.js": {
-      "LanguageId": "Gatsby",
+      "LanguageID": "Gatsby",
       "LanguageAsset": "gatsby"
     },
     "gatsby-browser.js": {
-      "LanguageId": "Gatsby",
+      "LanguageID": "Gatsby",
       "LanguageAsset": "gatsby"
     },
     "gatsby-ssr.js": {
-      "LanguageId": "Gatsby",
+      "LanguageID": "Gatsby",
       "LanguageAsset": "gatsby"
     },
     "gemfile": {
@@ -338,32 +350,44 @@
       "LanguageAsset": "git"
     },
     "build.gradle": {
-      "LanguageId": "Gradle",
+      "LanguageID": "Gradle",
       "LanguageAsset": "gradle"
     },
     "settings.gradle": {
-      "LanguageId": "Gradle",
+      "LanguageID": "Gradle",
       "LanguageAsset": "gradle"
     },
     "gradlew": {
-      "LanguageId": "Gradle",
+      "LanguageID": "Gradle",
       "LanguageAsset": "gradle"
     },
     "gradlew.bat": {
-      "LanguageId": "Gradle",
+      "LanguageID": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    "gradle.properties": {
+      "LanguageID": "Gradle",
       "LanguageAsset": "gradle"
     },
     "graphql.config.json": {
-      "LanguageId": "GraphQL",
+      "LanguageID": "GraphQL",
       "LanguageAsset": "graphql"
     },
     ".graphqlrc": {
-      "LanguageId": "GraphQL",
+      "LanguageID": "GraphQL",
       "LanguageAsset": "graphql"
     },
     "gruntfile.js": {
       "LanguageID": "GruntFile",
       "LanguageAsset": "gruntfile"
+    },
+    "go.mod": {
+      "LanguageID": "Go",
+      "LanguageAsset": "go"
+    },
+    "go.sum": {
+      "LanguageID": "Go",
+      "LanguageAsset": "go"
     },
     "gulpfile.js": {
       "LanguageID": "Gulp",
@@ -406,325 +430,369 @@
       "LanguageAsset": "haxe"
     },
     "procfile": {
-      "LanguageId": "Heroku",
+      "LanguageID": "Heroku",
       "LanguageAsset": "heroku"
+    },
+    ".htacess": {
+      "LanguageID": "HTTP",
+      "LanguageAsset": "http"
+    },
+    "httpd.conf": {
+      "LanguageID": "HTTP",
+      "LanguageAsset": "http"
+    },
+    "nginx.conf": {
+      "LanguageID": "HTTP",
+      "LanguageAsset": "http"
+    },
+    "ssl.conf": {
+      "LanguageID": "HTTP",
+      "LanguageAsset": "http"
+    },
+    "hosts": {
+      "LanguageID": "HTTP",
+      "LanguageAsset": "http"
+    },
+    "jest.config.js": {
+      "LanguageID": "Jest",
+      "LanguageAsset": "jest"
+    },
+    "jest.config.cjs": {
+      "LanguageID": "Jest",
+      "LanguageAsset": "jest"
+    },
+    "jest.config.mjs": {
+      "LanguageID": "Jest",
+      "LanguageAsset": "jest"
+    },
+    "jest.config.json": {
+      "LanguageID": "Jest",
+      "LanguageAsset": "jest"
+    },
+    "jest.config.ts": {
+      "LanguageID": "Jest",
+      "LanguageAsset": "jest"
+    },
+    "jsconfig.json": {
+      "LanguageID": "JS",
+      "LanguageAsset": "js"
     }
   },
   "ext_files": {
     ".ahk": {
-      "LanguageId": "AutoHotkey",
+      "LanguageID": "AutoHotkey",
       "LanguageAsset": "ahk"
     },
     ".ahk2": {
-      "LanguageId": "AutoHotkey",
+      "LanguageID": "AutoHotkey",
       "LanguageAsset": "ahk"
     },
     ".ahk3": {
-      "LanguageId": "AutoHotkey",
+      "LanguageID": "AutoHotkey",
       "LanguageAsset": "ahk"
     },
     ".ahkl": {
-      "LanguageId": "AutoHotkey",
+      "LanguageID": "AutoHotkey",
       "LanguageAsset": "ahk"
     },
     ".apk": {
-      "LanguageId": "Android",
+      "LanguageID": "Android",
       "LanguageAsset": "android"
     },
     ".aab": {
-      "LanguageId": "Android",
+      "LanguageID": "Android",
       "LanguageAsset": "android"
     },
     ".aar": {
-      "LanguageId": "Android",
+      "LanguageID": "Android",
       "LanguageAsset": "android"
     },
     ".apklib": {
-      "LanguageId": "Android",
+      "LanguageID": "Android",
       "LanguageAsset": "android"
     },
     ".apks": {
-      "LanguageId": "Android",
+      "LanguageID": "Android",
       "LanguageAsset": "android"
     },
     ".aar.pro": {
-      "LanguageId": "Android",
+      "LanguageID": "Android",
       "LanguageAsset": "android"
     },
     ".scpt": {
-      "LanguageId": "AppleScript",
+      "LanguageID": "AppleScript",
       "LanguageAsset": "applescript"
     },
     ".scptd": {
-      "LanguageId": "AppleScript",
+      "LanguageID": "AppleScript",
       "LanguageAsset": "applescript"
     },
     ".applescript": {
-      "LanguageId": "AppleScript",
+      "LanguageID": "AppleScript",
       "LanguageAsset": "applescript"
     },
     ".ino": {
-      "LanguageId": "Arduino",
+      "LanguageID": "Arduino",
       "LanguageAsset": "arduino"
     },
     ".pde": {
-      "LanguageId": "Arduino",
+      "LanguageID": "Arduino",
       "LanguageAsset": "arduino"
     },
     ".as": {
-      "LanguageId": "ActionScript",
+      "LanguageID": "ActionScript",
       "LanguageAsset": "actionscript"
     },
     ".mxml": {
-      "LanguageId": "ActionScript",
+      "LanguageID": "ActionScript",
       "LanguageAsset": "actionscript"
     },
     ".swf": {
-      "LanguageId": "ActionScript",
+      "LanguageID": "ActionScript",
       "LanguageAsset": "actionscript"
     },
     ".fla": {
-      "LanguageId": "ActionScript",
+      "LanguageID": "ActionScript",
       "LanguageAsset": "actionscript"
     },
     ".ascx": {
-      "LanguageId": "ASP.NET",
+      "LanguageID": "ASP.NET",
       "LanguageAsset": "aspnet"
     },
     ".asmx": {
-      "LanguageId": "ASP.NET",
+      "LanguageID": "ASP.NET",
       "LanguageAsset": "aspnet"
     },
     ".aspx": {
-      "LanguageId": "ASP.NET",
+      "LanguageID": "ASP.NET",
       "LanguageAsset": "aspnet"
     },
     ".asm": {
-      "LanguageId": "Assembly",
+      "LanguageID": "Assembly",
       "LanguageAsset": "assembly"
     },
     ".au3": {
-      "LanguageId": "AutoIt",
+      "LanguageID": "AutoIt",
       "LanguageAsset": "autoit"
     },
     ".au3info.ini": {
-      "LanguageId": "AutoIt",
+      "LanguageID": "AutoIt",
       "LanguageAsset": "autoit"
     },
     ".a3x": {
-      "LanguageId": "AutoIt",
+      "LanguageID": "AutoIt",
       "LanguageAsset": "autoit"
     },
     ".bat": {
-      "LanguageId": "Bat",
+      "LanguageID": "Bat",
       "LanguageAsset": "bat"
     },
     ".bf": {
-      "LanguageId": "BrainFuck",
+      "LanguageID": "BrainFuck",
       "LanguageAsset": "brainfuck"
     },
     ".c": {
-      "LanguageId": "C",
+      "LanguageID": "C",
       "LanguageAsset": "c"
     },
     ".h": {
-      "LanguageId": "C Header",
+      "LanguageID": "C Header",
       "LanguageAsset": "c"
     },
     ".clj": {
-      "LanguageId": "Clojure",
+      "LanguageID": "Clojure",
       "LanguageAsset": "clojure"
     },
     ".cljs": {
-      "LanguageId": "ClojureScript",
+      "LanguageID": "ClojureScript",
       "LanguageAsset": "clojure"
     },
     ".cljc": {
-      "LanguageId": "Clojure",
+      "LanguageID": "Clojure/ClojureScript",
       "LanguageAsset": "clojure"
     },
     ".edn": {
-      "LanguageId": "Clojure",
+      "LanguageID": "Clojure",
       "LanguageAsset": "clojure"
     },
     ".clojure": {
-      "LanguageId": "Clojure",
+      "LanguageID": "Clojure",
       "LanguageAsset": "clojure"
     },
     ".cmake": {
-      "LanguageId": "CMake",
+      "LanguageID": "CMake",
       "LanguageAsset": "cmake"
     },
     ".cmake.in": {
-      "LanguageId": "CMake",
+      "LanguageID": "CMake",
       "LanguageAsset": "cmake"
     },
     ".coffee": {
-      "LanguageId": "CoffeeScript",
+      "LanguageID": "CoffeeScript",
       "LanguageAsset": "coffeescript"
     },
     ".cpp": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".hpp": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".hxx": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".cc": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".cxx": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".c++": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".cp": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".mm": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".inl": {
-      "LanguageId": "C++",
+      "LanguageID": "C++",
       "LanguageAsset": "cpp"
     },
     ".cr": {
-      "LanguageId": "Crystal",
+      "LanguageID": "Crystal",
       "LanguageAsset": "crystal"
     },
     ".crystal": {
-      "LanguageId": "Crystal",
+      "LanguageID": "Crystal",
       "LanguageAsset": "crystal"
     },
     ".cs": {
-      "LanguageId": "C#",
+      "LanguageID": "C#",
       "LanguageAsset": "csharp"
     },
     ".csproj": {
-      "LanguageId": "C#",
+      "LanguageID": "C#",
       "LanguageAsset": "csharp"
     },
     ".cshtml": {
-      "LanguageId": "CSHTML",
+      "LanguageID": "CSHTML",
       "LanguageAsset": "cshtml"
     },
     ".css": {
-      "LanguageId": "CSS",
+      "LanguageID": "CSS",
       "LanguageAsset": "css"
     },
     ".css3": {
-      "LanguageId": "CSS",
+      "LanguageID": "CSS",
       "LanguageAsset": "css"
     },
     ".css.map": {
-      "LanguageId": "CSSMap",
+      "LanguageID": "CSSMap",
       "LanguageAsset": "cssmap"
     },
     ".cu": {
-      "LanguageId": "Cuda",
+      "LanguageID": "Cuda",
       "LanguageAsset": "cuda"
     },
     ".cuh": {
-      "LanguageId": "Cuda",
+      "LanguageID": "Cuda",
       "LanguageAsset": "cuda"
     },
     ".d": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     ".di": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     ".dd": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     ".dpp": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     ".dss": {
-      "LanguageId": "D",
+      "LanguageID": "D",
       "LanguageAsset": "d"
     },
     ".dart": {
-      "LanguageId": "Dart",
+      "LanguageID": "Dart",
       "LanguageAsset": "dart"
     },
     ".pash": {
-      "LanguageId": "Delphi",
+      "LanguageID": "Delphi",
       "LanguageAsset": "delphi"
     },
     ".pas": {
-      "LanguageId": "Delphi",
+      "LanguageID": "Delphi",
       "LanguageAsset": "delphi"
     },
     ".dfm": {
-      "LanguageId": "Delphi",
+      "LanguageID": "Delphi",
       "LanguageAsset": "delphi"
     },
     ".dpr": {
-      "LanguageId": "Delphi",
+      "LanguageID": "Delphi",
       "LanguageAsset": "delphi"
     },
     ".dcu": {
-      "LanguageId": "Delphi",
+      "LanguageID": "Delphi",
       "LanguageAsset": "delphi"
     },
     ".dcp": {
-      "LanguageId": "Delphi",
+      "LanguageID": "Delphi",
       "LanguageAsset": "delphi"
     },
     ".bpl": {
-      "LanguageId": "Delphi",
+      "LanguageID": "Delphi",
       "LanguageAsset": "delphi"
     },
     ".dm": {
-      "LanguageId": "DreamMaker",
+      "LanguageID": "DreamMaker",
       "LanguageAsset": "dm"
     },
     ".ejs": {
-      "LanguageId": "EJS",
+      "LanguageID": "EJS",
       "LanguageAsset": "ejs"
     },
     ".ejs.lint": {
-      "LanguageId": "EJS",
+      "LanguageID": "EJS",
       "LanguageAsset": "ejs"
     },
     ".ex": {
-      "LanguageId": "Elixir",
+      "LanguageID": "Elixir",
       "LanguageAsset": "elixir"
     },
     ".exs": {
-      "LanguageId": "Elixir",
+      "LanguageID": "Elixir",
       "LanguageAsset": "elixir"
     },
     ".eex": {
-      "LanguageId": "Elixir",
+      "LanguageID": "Elixir",
       "LanguageAsset": "elixir"
     },
     ".elm": {
-      "LanguageId": "Elm",
+      "LanguageID": "Elm",
       "LanguageAsset": "elm"
     },
     ".erl": {
-      "LanguageId": "Erlang",
+      "LanguageID": "Erlang",
       "LanguageAsset": "erlang"
     },
     ".hrl": {
-      "LanguageId": "Erlang",
+      "LanguageID": "Erlang",
       "LanguageAsset": "erlang"
     },
     ".fs": {
@@ -764,39 +832,27 @@
       "LanguageAsset": "fsharp"
     },
     ".go": {
-      "LanguageId": "Go",
-      "LanguageAsset": "go"
-    },
-    "go.mod": {
-      "LanguageId": "Go",
-      "LanguageAsset": "go"
-    },
-    "go.sum": {
-      "LanguageId": "Go",
+      "LanguageID": "Go",
       "LanguageAsset": "go"
     },
     ".gradle": {
-      "LanguageId": "Gradle",
+      "LanguageID": "Gradle",
       "LanguageAsset": "gradle"
     },
     ".gradle.kts": {
-      "LanguageId": "Gradle",
+      "LanguageID": "Gradle",
       "LanguageAsset": "gradle"
     },
     ".gradle.properties": {
-      "LanguageId": "Gradle",
-      "LanguageAsset": "gradle"
-    },
-    "gradle.properties": {
-      "LanguageId": "Gradle",
+      "LanguageID": "Gradle",
       "LanguageAsset": "gradle"
     },
     ".graphql": {
-      "LanguageId": "GraphQL",
+      "LanguageID": "GraphQL",
       "LanguageAsset": "graphql"
     },
     ".gql": {
-      "LanguageId": "GraphQL",
+      "LanguageID": "GraphQL",
       "LanguageAsset": "graphql"
     },
     ".hbs": {
@@ -840,12 +896,68 @@
       "LanguageAsset": "haxe"
     },
     ".html": {
-      "LanguageId": "HTML",
+      "LanguageID": "HTML",
       "LanguageAsset": "html"
     },
     ".html5": {
-      "LanguageId": "HTML",
+      "LanguageID": "HTML",
       "LanguageAsset": "html"
+    },
+    ".jar": {
+      "LanguageID": "Jar",
+      "LanguageAsset": "jar"
+    },
+    ".war": {
+      "LanguageID": "Jar",
+      "LanguageAsset": "jar"
+    },
+    ".ear": {
+      "LanguageID": "Jar",
+      "LanguageAsset": "jar"
+    },
+    ".par": {
+      "LanguageID": "Jar",
+      "LanguageAsset": "jar"
+    },
+    ".java": {
+      "LanguageID": "Java",
+      "LanguageAsset": "java"
+    },
+    ".class": {
+      "LanguageID": "Java",
+      "LanguageAsset": "java"
+    },
+    ".jsp": {
+      "LanguageID": "Java",
+      "LanguageAsset": "java"
+    },
+    ".javadoc": {
+      "LanguageID": "Java",
+      "LanguageAsset": "java"
+    },
+    ".js": {
+      "LanguageID": "JS",
+      "LanguageAsset": "js"
+    },
+    ".cjs": {
+      "LanguageID": "JS",
+      "LanguageAsset": "js"
+    },
+    ".mjs": {
+      "LanguageID": "JS",
+      "LanguageAsset": "js"
+    },
+    ".js.map": {
+      "LanguageID": "JSMap",
+      "LanguageAsset": "jsmap"
+    },
+    ".json": {
+      "LanguageID": "JSON",
+      "LanguageAsset": "json"
+    },
+    ".jsx": {
+      "LanguageID": "JSX",
+      "LanguageAsset": "jsx"
     }
   }
 }

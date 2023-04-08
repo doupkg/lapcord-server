@@ -67,10 +67,13 @@ function getFileName(document: TextDocument) {
 function resolveJson(document: TextDocument): LanguageData {
   const { config_files, ext_files } = LanguagesJson
   const FileName = getFileName(document).toLowerCase()
-  const ExtensionName = extname(FileName) ? FileName.slice(FileName.indexOf('.')) : null
+  const FullExtensionName = extname(FileName) ? FileName.slice(FileName.indexOf('.')) : null
+  const ExtensionName = extname(FileName) ? extname(FileName) : null
 
   return config_files[FileName]
     ? { ...config_files[FileName] }
+    : ext_files[FullExtensionName]
+    ? { ...ext_files[FullExtensionName] }
     : ext_files[ExtensionName]
     ? { ...ext_files[ExtensionName] }
     : { LanguageId: 'Text', LanguageAsset: IMAGE_KEYS.TEXT }
