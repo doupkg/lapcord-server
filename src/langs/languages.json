@@ -1,181 +1,851 @@
 {
   "$schema": "./schema.json",
-
-  ".bashrc": {
-    "LanguageId": "Bash",
-    "LanguageAsset": "bash"
+  "config_files": {
+    "angular.json": {
+      "LanguageId": "Angular",
+      "LanguageAsset": "angular"
+    },
+    ".appveyor.yml": {
+      "LanguageId": "AppVeyor",
+      "LanguageAsset": "appveyor"
+    },
+    ".babelrc": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    ".babelignore": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    ".babelrc.json": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    ".babelrc.js": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    ".babelrc.cjs": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    ".babelrc.mjs": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    ".babelrc.cts": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    "babel.config.json": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    "babel.config.js": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    "babel.config.cjs": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    "babel.config.cts": {
+      "LanguageId": "Babel",
+      "LanguageAsset": "babel"
+    },
+    "cargo.lock": {
+      "LanguageId": "Cargo",
+      "LanguageAsset": "cargo"
+    },
+    "cargo.toml": {
+      "LanguageId": "Cargo",
+      "LanguageAsset": "cargo"
+    },
+    "CMakeLists.txt": {
+      "LanguageId": "CMake",
+      "LanguageAsset": "cmake"
+    },
+    ".codeclimate.yml": {
+      "LanguageId": "CodeClimate",
+      "LanguageAsset": "codeclimate"
+    },
+    ".codeclimate.json": {
+      "LanguageId": "CodeClimate",
+      "LanguageAsset": "codeclimate"
+    },
+    "Cakefile": {
+      "LanguageId": "CoffeeScript",
+      "LanguageAsset": "coffeescript"
+    },
+    ".coffeelintignore": {
+      "LanguageId": "CoffeeScript",
+      "LanguageAsset": "coffeescript"
+    },
+    ".coffeelint.json": {
+      "LanguageId": "CoffeeScript",
+      "LanguageAsset": "coffeescript"
+    },
+    ".coffeeignore": {
+      "LanguageId": "CoffeeScript",
+      "LanguageAsset": "coffeescript"
+    },
+    ".crignore": {
+      "LanguageId": "Crystal",
+      "LanguageAsset": "crystal"
+    },
+    "dub.json": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    "dub.sdl": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    "rdmd.conf": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    "sc.ini": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    ".dartignore": {
+      "LanguageId": "Dart",
+      "LanguageAsset": "dart"
+    },
+    ".metadata": {
+      "LanguageId": "Dart",
+      "LanguageAsset": "dart"
+    },
+    "pubspec.lock": {
+      "LanguageId": "Dart",
+      "LanguageAsset": "dart"
+    },
+    "pubspec.yaml": {
+      "LanguageId": "Dart",
+      "LanguageAsset": "dart"
+    },
+    ".dmconfig": {
+      "LanguageId": "DreamMaker",
+      "LanguageAsset": "dm"
+    },
+    ".dockerignore": {
+      "LanguageId": "Docker Ignore",
+      "LanguageAsset": "dockerignore"
+    },
+    "dockerfile": {
+      "LanguageId": "Docker",
+      "LanguageAsset": "docker"
+    },
+    "docker-compose.yml": {
+      "LanguageId": "Docker",
+      "LanguageAsset": "docker"
+    },
+    "docker-compose.yaml": {
+      "LanguageId": "Docker",
+      "LanguageAsset": "docker"
+    },
+    ".editorconfig": {
+      "LanguageId": "EditorConfig",
+      "LanguageAsset": "editorconfig"
+    },
+    ".ejsrc": {
+      "LanguageId": "EJS",
+      "LanguageAsset": "ejs"
+    },
+    ".ejslintrc": {
+      "LanguageId": "EJS",
+      "LanguageAsset": "ejs"
+    },
+    ".ejs.config.js": {
+      "LanguageId": "EJS",
+      "LanguageAsset": "ejs"
+    },
+    ".ejs.config.cjs": {
+      "LanguageId": "EJS",
+      "LanguageAsset": "ejs"
+    },
+    ".ejs.config.json": {
+      "LanguageId": "EJS",
+      "LanguageAsset": "ejs"
+    },
+    "elm.json": {
+      "LanguageId": "Elm",
+      "LanguageAsset": "elm"
+    },
+    ".env": {
+      "LanguageID": "Env",
+      "LanguageAsset": "env"
+    },
+    ".env.example": {
+      "LanguageID": "Env",
+      "LanguageAsset": "env"
+    },
+    ".env.local": {
+      "LanguageID": "Env",
+      "LanguageAsset": "env"
+    },
+    ".env.development": {
+      "LanguageID": "Env",
+      "LanguageAsset": "env"
+    },
+    ".env.production": {
+      "LanguageID": "Env",
+      "LanguageAsset": "env"
+    },
+    ".env.yaml": {
+      "LanguageID": "Env",
+      "LanguageAsset": "env"
+    },
+    "emakefile": {
+      "LanguageId": "Erlang",
+      "LanguageAsset": "erlang"
+    },
+    "rebar.config": {
+      "LanguageId": "Erlang",
+      "LanguageAsset": "erlang"
+    },
+    "rebar.config.script": {
+      "LanguageId": "Erlang",
+      "LanguageAsset": "erlang"
+    },
+    ".eslintrc.json": {
+      "LanguageId": "ESLint Configuration",
+      "LanguageAsset": "eslint-config"
+    },
+    ".eslintrc.js": {
+      "LanguageId": "ESLint Configuration",
+      "LanguageAsset": "eslint-config"
+    },
+    ".eslintrc.cjs": {
+      "LanguageId": "ESLint Configuration",
+      "LanguageAsset": "eslint-config"
+    },
+    ".eslintrc.yml": {
+      "LanguageId": "ESLint Configuration",
+      "LanguageAsset": "eslint-config"
+    },
+    ".eslintrc.yaml": {
+      "LanguageId": "ESLint Configuration",
+      "LanguageAsset": "eslint-config"
+    },
+    ".eslintignore": {
+      "LanguageId": "ESLint Ignore File",
+      "LanguageAsset": "eslint-ignore"
+    },
+    ".eslintcache": {
+      "LanguageId": "ESLint Cache File",
+      "LanguageAsset": "eslint-cache"
+    },
+    ".firebaserc": {
+      "LanguageId": "Firebase",
+      "LanguageAsset": "firebase"
+    },
+    "firebase.json": {
+      "LanguageId": "Firebase",
+      "LanguageAsset": "firebase"
+    },
+    "database.rules.json": {
+      "LanguageId": "Firebase",
+      "LanguageAsset": "firebase"
+    },
+    "firestore.indexes.json": {
+      "LanguageId": "Firebase",
+      "LanguageAsset": "firebase"
+    },
+    "firestore.rules": {
+      "LanguageId": "Firebase",
+      "LanguageAsset": "firebase"
+    },
+    "storage.rules": {
+      "LanguageId": "Firebase",
+      "LanguageAsset": "firebase"
+    },
+    ".flowconfig": {
+      "LanguageID": "Flow",
+      "LanguageAsset": "flow"
+    },
+    "gatsby-config.js": {
+      "LanguageId": "Gatsby",
+      "LanguageAsset": "gatsby"
+    },
+    "gatsby-node.js": {
+      "LanguageId": "Gatsby",
+      "LanguageAsset": "gatsby"
+    },
+    "gatsby-browser.js": {
+      "LanguageId": "Gatsby",
+      "LanguageAsset": "gatsby"
+    },
+    "gatsby-ssr.js": {
+      "LanguageId": "Gatsby",
+      "LanguageAsset": "gatsby"
+    },
+    "gemfile": {
+      "LanguageID": "Gem",
+      "LanguageAsset": "gemfile"
+    },
+    ".gitattributes": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitignore": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitmodules": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitkeep": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".mailmap": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitconfig": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitmessage": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitattributes-merge": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitattributes-per-user": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitconfig-include": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitignore_global": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitignore-glob": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    ".gitmodules-ignore": {
+      "LanguageID": "Git",
+      "LanguageAsset": "git"
+    },
+    "build.gradle": {
+      "LanguageId": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    "settings.gradle": {
+      "LanguageId": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    "gradlew": {
+      "LanguageId": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    "gradlew.bat": {
+      "LanguageId": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    "graphql.config.json": {
+      "LanguageId": "GraphQL",
+      "LanguageAsset": "graphql"
+    },
+    ".graphqlrc": {
+      "LanguageId": "GraphQL",
+      "LanguageAsset": "graphql"
+    },
+    "gruntfile.js": {
+      "LanguageID": "GruntFile",
+      "LanguageAsset": "gruntfile"
+    },
+    "gulpfile.js": {
+      "LanguageID": "Gulp",
+      "LanguageAsset": "gulp"
+    },
+    "gulpfile.ts": {
+      "LanguageID": "Gulp",
+      "LanguageAsset": "gulp"
+    },
+    ".haskellrc": {
+      "LanguageID": "Haskell",
+      "LanguageAsset": "haskell"
+    },
+    ".ghci": {
+      "LanguageID": "Haskell",
+      "LanguageAsset": "haskell"
+    },
+    ".haskeline": {
+      "LanguageID": "Haskell",
+      "LanguageAsset": "haskell"
+    },
+    "haxe.json": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    "hxml": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    ".haxerc": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    ".hxcode": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    ".hxinclude": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    "procfile": {
+      "LanguageId": "Heroku",
+      "LanguageAsset": "heroku"
+    }
   },
-  
-  ".bunfig": {
-    "LanguageId": "Bun",
-    "LanguageAsset": "bun"
-  },
-
-  ".editorconfig": {
-    "LanguageId": "EditorConfig",
-    "LanguageAsset": "editorconfig"
-  },
-
-  ".eslintrc": {
-    "LanguageId": "ESLint",
-    "LanguageAsset": "eslint"
-  },
-  ".eslintrc.json": {
-    "LanguageId": "ESLint",
-    "LanguageAsset": "eslint"
-  },
-  ".eslintrc.js": {
-    "LanguageId": "ESLint",
-    "LanguageAsset": "eslint"
-  },
-
-  ".gitignore": {
-    "LanguageId": "Git",
-    "LanguageAsset": "git"
-  },
-  ".gitkeep": {
-    "LanguageId": "Git",
-    "LanguageAsset": "git"
-  },
-  ".gitmodules": {
-    "LanguageId": "Git",
-    "LanguageAsset": "git"
-  },
-
-  ".go": {
-    "LanguageId": "Go",
-    "LanguageAsset": "go"
-  },
-
-  ".graphql": {
-    "LanguageId": "GraphQL",
-    "LanguageAsset": "graphql"
-  },
-  ".gql": {
-    "LanguageId": "GraphQL",
-    "LanguageAsset": "graphql"
-  },
-
-  ".js": {
-    "LanguageId": "JavaScript",
-    "LanguageAsset": "javascript"
-  },
-  ".cjs": {
-    "LanguageId": "JavaScript",
-    "LanguageAsset": "javascript"
-  },
-  ".mjs": {
-    "LanguageId": "JavaScript",
-    "LanguageAsset": "javascript"
-  },
-
-  ".json": {
-    "LanguageId": "JSON",
-    "LanguageAsset": "json"
-  },
-
-  "package.json": {
-    "LanguageId": "NPM",
-    "LanguageAsset": "npm"
-  },
-  "package-lock.json": {
-    "LanguageId": "NPM",
-    "LanguageAsset": "npm"
-  },
-
-  ".prettierrc": {
-    "LanguageId": "Prettier",
-    "LanguageAsset": "prettier"
-  },
-  ".prettierignore": {
-    "LanguageId": "Prettier",
-    "LanguageAsset": "prettier"
-  },
-
-  ".py": {
-    "LanguageId": "Python",
-    "LanguageAsset": "python"
-  },
-  ".pyi": {
-    "LanguageId": "Python",
-    "LanguageAsset": "python"
-  },
-  ".pyc": {
-    "LanguageId": "Python",
-    "LanguageAsset": "python"
-  },
-  ".pyd": {
-    "LanguageId": "Python",
-    "LanguageAsset": "python"
-  },
-  ".pyw": {
-    "LanguageId": "Python",
-    "LanguageAsset": "python"
-  },
-  ".pyz": {
-    "LanguageId": "Python",
-    "LanguageAsset": "python"
-  },
-  ".pyo": {
-    "LanguageId": "Python",
-    "LanguageAsset": "python"
-  },
-
-  ".jsx": {
-    "LanguageId": "React",
-    "LanguageAsset": "react"
-  },
-  ".tsx": {
-    "LanguageId": "React",
-    "LanguageAsset": "react"
-  },
-
-  ".replit": {
-    "LanguageId": "Replit",
-    "LanguageAsset": "replit"
-  },
-
-  ".rs": {
-    "LanguageId": "Rust",
-    "LanguageAsset": "rust"
-  },
-  
-  ".swcrc": {
-    "LanguageId": "SWC",
-    "LanguageAsset": "swc"
-  },
-
-  ".ts": {
-    "LanguageId": "TypeScript",
-    "LanguageAsset": "typescript"
-  },
-
-  ".vue": {
-    "LanguageId": "Vue",
-    "LanguageAsset": "vue"
-  },
-
-  ".wat": {
-    "LanguageId": "WebAssembly",
-    "LanguageAsset": "webassembly"
-  },
-  ".wasm": {
-    "LanguageId": "WebAssembly",
-    "LanguageAsset": "webassembly"
-  },
-
-  ".xaml": {
-    "LanguageId": "XAML",
-    "LanguageAsset": "xaml"
-  },
-  
-  ".yarnrc.yml": {
-    "LanguageId": "Yarn",
-    "LanguageAsset": "yarn"
-  },
-  "yarn.lock": {
-    "LanguageId": "Yarn",
-    "LanguageAsset": "yarn"
+  "ext_files": {
+    ".ahk": {
+      "LanguageId": "AutoHotkey",
+      "LanguageAsset": "ahk"
+    },
+    ".ahk2": {
+      "LanguageId": "AutoHotkey",
+      "LanguageAsset": "ahk"
+    },
+    ".ahk3": {
+      "LanguageId": "AutoHotkey",
+      "LanguageAsset": "ahk"
+    },
+    ".ahkl": {
+      "LanguageId": "AutoHotkey",
+      "LanguageAsset": "ahk"
+    },
+    ".apk": {
+      "LanguageId": "Android",
+      "LanguageAsset": "android"
+    },
+    ".aab": {
+      "LanguageId": "Android",
+      "LanguageAsset": "android"
+    },
+    ".aar": {
+      "LanguageId": "Android",
+      "LanguageAsset": "android"
+    },
+    ".apklib": {
+      "LanguageId": "Android",
+      "LanguageAsset": "android"
+    },
+    ".apks": {
+      "LanguageId": "Android",
+      "LanguageAsset": "android"
+    },
+    ".aar.pro": {
+      "LanguageId": "Android",
+      "LanguageAsset": "android"
+    },
+    ".scpt": {
+      "LanguageId": "AppleScript",
+      "LanguageAsset": "applescript"
+    },
+    ".scptd": {
+      "LanguageId": "AppleScript",
+      "LanguageAsset": "applescript"
+    },
+    ".applescript": {
+      "LanguageId": "AppleScript",
+      "LanguageAsset": "applescript"
+    },
+    ".ino": {
+      "LanguageId": "Arduino",
+      "LanguageAsset": "arduino"
+    },
+    ".pde": {
+      "LanguageId": "Arduino",
+      "LanguageAsset": "arduino"
+    },
+    ".as": {
+      "LanguageId": "ActionScript",
+      "LanguageAsset": "actionscript"
+    },
+    ".mxml": {
+      "LanguageId": "ActionScript",
+      "LanguageAsset": "actionscript"
+    },
+    ".swf": {
+      "LanguageId": "ActionScript",
+      "LanguageAsset": "actionscript"
+    },
+    ".fla": {
+      "LanguageId": "ActionScript",
+      "LanguageAsset": "actionscript"
+    },
+    ".ascx": {
+      "LanguageId": "ASP.NET",
+      "LanguageAsset": "aspnet"
+    },
+    ".asmx": {
+      "LanguageId": "ASP.NET",
+      "LanguageAsset": "aspnet"
+    },
+    ".aspx": {
+      "LanguageId": "ASP.NET",
+      "LanguageAsset": "aspnet"
+    },
+    ".asm": {
+      "LanguageId": "Assembly",
+      "LanguageAsset": "assembly"
+    },
+    ".au3": {
+      "LanguageId": "AutoIt",
+      "LanguageAsset": "autoit"
+    },
+    ".au3info.ini": {
+      "LanguageId": "AutoIt",
+      "LanguageAsset": "autoit"
+    },
+    ".a3x": {
+      "LanguageId": "AutoIt",
+      "LanguageAsset": "autoit"
+    },
+    ".bat": {
+      "LanguageId": "Bat",
+      "LanguageAsset": "bat"
+    },
+    ".bf": {
+      "LanguageId": "BrainFuck",
+      "LanguageAsset": "brainfuck"
+    },
+    ".c": {
+      "LanguageId": "C",
+      "LanguageAsset": "c"
+    },
+    ".h": {
+      "LanguageId": "C Header",
+      "LanguageAsset": "c"
+    },
+    ".clj": {
+      "LanguageId": "Clojure",
+      "LanguageAsset": "clojure"
+    },
+    ".cljs": {
+      "LanguageId": "ClojureScript",
+      "LanguageAsset": "clojure"
+    },
+    ".cljc": {
+      "LanguageId": "Clojure",
+      "LanguageAsset": "clojure"
+    },
+    ".edn": {
+      "LanguageId": "Clojure",
+      "LanguageAsset": "clojure"
+    },
+    ".clojure": {
+      "LanguageId": "Clojure",
+      "LanguageAsset": "clojure"
+    },
+    ".cmake": {
+      "LanguageId": "CMake",
+      "LanguageAsset": "cmake"
+    },
+    ".cmake.in": {
+      "LanguageId": "CMake",
+      "LanguageAsset": "cmake"
+    },
+    ".coffee": {
+      "LanguageId": "CoffeeScript",
+      "LanguageAsset": "coffeescript"
+    },
+    ".cpp": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".hpp": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".hxx": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".cc": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".cxx": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".c++": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".cp": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".mm": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".inl": {
+      "LanguageId": "C++",
+      "LanguageAsset": "cpp"
+    },
+    ".cr": {
+      "LanguageId": "Crystal",
+      "LanguageAsset": "crystal"
+    },
+    ".crystal": {
+      "LanguageId": "Crystal",
+      "LanguageAsset": "crystal"
+    },
+    ".cs": {
+      "LanguageId": "C#",
+      "LanguageAsset": "csharp"
+    },
+    ".csproj": {
+      "LanguageId": "C#",
+      "LanguageAsset": "csharp"
+    },
+    ".cshtml": {
+      "LanguageId": "CSHTML",
+      "LanguageAsset": "cshtml"
+    },
+    ".css": {
+      "LanguageId": "CSS",
+      "LanguageAsset": "css"
+    },
+    ".css3": {
+      "LanguageId": "CSS",
+      "LanguageAsset": "css"
+    },
+    ".css.map": {
+      "LanguageId": "CSSMap",
+      "LanguageAsset": "cssmap"
+    },
+    ".cu": {
+      "LanguageId": "Cuda",
+      "LanguageAsset": "cuda"
+    },
+    ".cuh": {
+      "LanguageId": "Cuda",
+      "LanguageAsset": "cuda"
+    },
+    ".d": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    ".di": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    ".dd": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    ".dpp": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    ".dss": {
+      "LanguageId": "D",
+      "LanguageAsset": "d"
+    },
+    ".dart": {
+      "LanguageId": "Dart",
+      "LanguageAsset": "dart"
+    },
+    ".pash": {
+      "LanguageId": "Delphi",
+      "LanguageAsset": "delphi"
+    },
+    ".pas": {
+      "LanguageId": "Delphi",
+      "LanguageAsset": "delphi"
+    },
+    ".dfm": {
+      "LanguageId": "Delphi",
+      "LanguageAsset": "delphi"
+    },
+    ".dpr": {
+      "LanguageId": "Delphi",
+      "LanguageAsset": "delphi"
+    },
+    ".dcu": {
+      "LanguageId": "Delphi",
+      "LanguageAsset": "delphi"
+    },
+    ".dcp": {
+      "LanguageId": "Delphi",
+      "LanguageAsset": "delphi"
+    },
+    ".bpl": {
+      "LanguageId": "Delphi",
+      "LanguageAsset": "delphi"
+    },
+    ".dm": {
+      "LanguageId": "DreamMaker",
+      "LanguageAsset": "dm"
+    },
+    ".ejs": {
+      "LanguageId": "EJS",
+      "LanguageAsset": "ejs"
+    },
+    ".ejs.lint": {
+      "LanguageId": "EJS",
+      "LanguageAsset": "ejs"
+    },
+    ".ex": {
+      "LanguageId": "Elixir",
+      "LanguageAsset": "elixir"
+    },
+    ".exs": {
+      "LanguageId": "Elixir",
+      "LanguageAsset": "elixir"
+    },
+    ".eex": {
+      "LanguageId": "Elixir",
+      "LanguageAsset": "elixir"
+    },
+    ".elm": {
+      "LanguageId": "Elm",
+      "LanguageAsset": "elm"
+    },
+    ".erl": {
+      "LanguageId": "Erlang",
+      "LanguageAsset": "erlang"
+    },
+    ".hrl": {
+      "LanguageId": "Erlang",
+      "LanguageAsset": "erlang"
+    },
+    ".fs": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".fsi": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".fsx": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".fsscript": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".fsproj": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".fsxproj": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".fsi.template": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".fsx.template": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".fsproj.user": {
+      "LanguageID": "FSharp",
+      "LanguageAsset": "fsharp"
+    },
+    ".go": {
+      "LanguageId": "Go",
+      "LanguageAsset": "go"
+    },
+    "go.mod": {
+      "LanguageId": "Go",
+      "LanguageAsset": "go"
+    },
+    "go.sum": {
+      "LanguageId": "Go",
+      "LanguageAsset": "go"
+    },
+    ".gradle": {
+      "LanguageId": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    ".gradle.kts": {
+      "LanguageId": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    ".gradle.properties": {
+      "LanguageId": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    "gradle.properties": {
+      "LanguageId": "Gradle",
+      "LanguageAsset": "gradle"
+    },
+    ".graphql": {
+      "LanguageId": "GraphQL",
+      "LanguageAsset": "graphql"
+    },
+    ".gql": {
+      "LanguageId": "GraphQL",
+      "LanguageAsset": "graphql"
+    },
+    ".hbs": {
+      "LanguageID": "Handlebars",
+      "LanguageAsset": "handlebars"
+    },
+    ".handlebars": {
+      "LanguageID": "Handlebars",
+      "LanguageAsset": "handlebars"
+    },
+    ".hb": {
+      "LanguageID": "Handlebars",
+      "LanguageAsset": "handlebars"
+    },
+    ".hs": {
+      "LanguageID": "Haskell",
+      "LanguageAsset": "haskell"
+    },
+    ".lhs": {
+      "LanguageID": "Haskell",
+      "LanguageAsset": "haskell"
+    },
+    ".hsc": {
+      "LanguageID": "Haskell",
+      "LanguageAsset": "haskell"
+    },
+    ".hx": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    ".hxml": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    ".hxproj": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    ".hxt": {
+      "LanguageID": "Haxe",
+      "LanguageAsset": "haxe"
+    },
+    ".html": {
+      "LanguageId": "HTML",
+      "LanguageAsset": "html"
+    },
+    ".html5": {
+      "LanguageId": "HTML",
+      "LanguageAsset": "html"
+    }
   }
-  
 }
