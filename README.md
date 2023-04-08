@@ -20,13 +20,12 @@
   - [Installing Lapcord](#installing-lapcord)
   - [Using Lapcord](#using-lapcord)
 - [Contributing](#contributing)
-- [Frequently Asked Questions](#frequently-asked-questions)
 - [Support](#support)
 - [Contributors](#contributors)
 - [Credits](#credits)
 
 ## Getting Started
-First of all to start using Lapcord you will have to install its extension in Lapce, which is available at [plugins.lapce.dev](https://plugins.lapce.dev).
+To begin using Lapcord you will have to install its extension in Lapce, which is available at [plugins.lapce.dev](https://plugins.lapce.dev).
 
 ### Installing Lapcord
 | ✨ | Type | Command |
@@ -42,7 +41,7 @@ To check it run `lapcord`. If it finds the command is because it is installed co
 
 ### Using Lapcord
 
-By logic you have to open Lapce and have a Discord session open on your desktop for the server to start and initialize the presence.
+Open Lapce.
 
 Now your Discord profile should display a presence like this:
 
@@ -53,16 +52,6 @@ Now your Discord profile should display a presence like this:
 ## Contributing
 
 See [CONTRIBUTING.md](https://github.com/doupkg/lapcord-server/blob/master/CONTRIBUTING.md).
-
-## Frequently Asked Questions
-
-> “Why must it be a server?” 
-
-Because Lapce plugins are compiled in WASI, which disables several features such as the OS library. This, added to many other things, makes it impossible to realize an IPC system. So we use a server that is installed separately to connect to Lapce and to be able to interleave an IPC system correctly.
-
-> “I've read the code, it looks like you are using wrong events.”
-
-Yeah, maybe. We have tested with all the events that `vscode-languageserver` offers us, like the `Connection` and `TextDocuments` class, some of these events we decreed that they were not emitted, for some reason that we don't know. Or some simply did not work the way we expected. For example, the `onDidOpen()` event was only emitted once, so it didn't work for us. The `onDidClose()` event is not even emitted.
 
 ## Support
 We are more active on Discord. [Click here](https://discord.gg/uujENVrXUC).
