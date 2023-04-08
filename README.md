@@ -45,7 +45,7 @@ Open Lapce.
 
 Now your Discord profile should display a presence like this:
 
-<img src='https://i.imgur.com/XBhlwMV.png' alt='discord-rpc' />
+<img src='https://i.imgur.com/ttCbBkM.png' alt='discord-rpc' />
 
 ###### If you do not have a Discord session on your desktop, Lapcord will show a notification in Lapce indicating that an error has occurred.
 
