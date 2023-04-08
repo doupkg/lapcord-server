@@ -1,20 +1,39 @@
 {
+  "$schema": "http://json-schema.org/schema",
   "type": "object",
   "properties": {
     "$schema": {
       "type": "string"
-    }
-  },
-  "additionalProperties": {
-    "type": "object",
-    "properties": {
-      "LanguageId": {
-        "type": "string"
-      },
-      "LanguageAsset": {
-        "type": "string"
+    },
+    "ext_files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "LanguageID": {
+            "type": "string"
+          },
+          "LanguageAsset": {
+            "type": "string"
+          }
+        },
+        "required": ["LanguageID", "LanguageAsset"]
       }
     },
-    "required": ["LanguageId", "LanguageAsset"]
+    "config_files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "LanguageID": {
+            "type": "string"
+          },
+          "LanguageAsset": {
+            "type": "string"
+          }
+        },
+        "required": ["LanguageID", "LanguageAsset"]
+      }
+    }
   }
 }

@@ -1,8 +1,21 @@
 #! /usr/bin/env node
-import type { WorkspaceFolder } from 'vscode-languageserver/node'
-import { createConnection, MessageType, ProposedFeatures, TextDocuments, TextDocumentSyncKind } from 'vscode-languageserver/node'
+import {
+  createConnection,
+  ProposedFeatures,
+  TextDocuments,
+  TextDocumentSyncKind,
+  type WorkspaceFolder
+} from 'vscode-languageserver/node'
+import {
+  initializeServer,
+  Ninth,
+  rpcConection,
+  sendNotification,
+  setActivity,
+  startTimer,
+  workDoneProgress
+} from './utils'
 import { TextDocument } from 'vscode-languageserver-textdocument'
-import { initializeServer, rpcConection, sendNotification, setActivity, startTimer, workDoneProgress } from './utils'
 
 export const Connection = createConnection(ProposedFeatures.all)
 export const CurrentTimestamp = Date.now()
@@ -42,7 +55,17 @@ Connection.onInitialized(() => initializeServer())
 
 Connection.listen()
 
+Connection.onExit(async () => {
+  await workDoneProgress.done()
+  await Ninth.destroy()
+})
+
+Connection.onShutdown(async () => {
+  await workDoneProgress.done()
+  await Ninth.destroy()
+})
+
 process.on('unhandledRejection', (e) => {
-  sendNotification(`Error: ${e}`, MessageType.Error)
+  sendNotification(`Error: ${e}`, 1)
   workDoneProgress.report('Error')
 })
