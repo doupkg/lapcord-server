@@ -1,6 +1,6 @@
 {
   "name": "@doupkg/lapcord",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Module required to run Lapcord.",
   "packageManager": "pnpm@8.1.1",
   "scripts": {
