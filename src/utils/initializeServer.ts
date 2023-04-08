@@ -4,13 +4,13 @@ import { Client } from '@xhayper/discord-rpc'
 import { writeFile } from 'node:fs/promises'
 import { LockFile } from '#src/config' */
 import { Connection } from '../server'
-import { ClientId } from '../config'
+import { ClientID } from '../config'
 import { setActivity } from './index'
 
 export let workDoneProgress: WorkDoneProgressServerReporter
 export let rpcConection = false
 export const Ninth = new Client({
-  clientId: ClientId,
+  clientId: ClientID,
   transport: {
     type: 'ipc'
   }
@@ -25,8 +25,8 @@ export async function initializeServer() {
 
   Ninth.on('connected', () => {
     rpcConection = true
-    workDoneProgress.report(Ninth.user?.tag as string)
-    if (Ninth.user) setActivity('idle')
+    workDoneProgress.report(Ninth.user?.tag)
+    setActivity('idle')
   })
 
   return Ninth.login()

@@ -1,7 +1,7 @@
 export enum IMAGE_KEYS {
   LOGO = 'lapce',
-  IDLE = 'idle',
-  KEYBOARD = 'keyboard_idling',
+  IDLE = 'idle_moon',
+  KEYBOARD = 'idle_keyboard',
   TEXT = 'text'
 }
 

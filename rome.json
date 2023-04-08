@@ -7,7 +7,7 @@
     "enabled": true,
     "indentSize": 2,
     "indentStyle": "space",
-    "lineWidth": 250,
+    "lineWidth": 120,
     "formatWithErrors": false,
     "ignore": ["dist"]
   },

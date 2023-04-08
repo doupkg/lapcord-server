@@ -1,51 +1,50 @@
 import type { SetActivity } from '@xhayper/discord-rpc'
 import type { TextDocument } from 'vscode-languageserver-textdocument'
+import { basename, extname } from 'node:path'
 import { IMAGE_KEYS, LanguageData, StatusType } from '../types'
-import { workspaceFolders } from '../server'
-import { basename } from 'node:path'
-import { MessageType } from 'vscode-languageserver'
-import { CurrentTimestamp } from '../server'
-import { resolveJson } from './resolveJson'
-import { sendNotification, Ninth } from './index'
+import { workspaceFolders, CurrentTimestamp } from '../server'
+import { Ninth, sendNotification } from './index'
+import * as LanguagesJson from '../langs/languages.json'
+
+const truncateString = (ctx: string) => {
+  return ctx.length > 128 ? `${ctx.slice(0, 125)}...` : ctx
+}
 
 export async function setActivity(type: StatusType, document?: TextDocument) {
   let language: LanguageData
 
-  if (type === 'editing' && !document) {
-    return sendNotification('You need "document" when you use the "editing" type!', MessageType.Error)
-  } else if (document) {
-    language = resolveJson(document)
-  }
+  if (type === 'editing' && !document)
+    return sendNotification('You must pass the argument Document when working with "editing" type.', 1)
+  if (type === 'editing') language = resolveJson(document)
 
   const activityObject: SetActivity = {
     state: getState(type, document),
     details: getDetails(),
     largeImageKey: getLargeImageKey(type, language),
-    largeImageText: getLargeImageText(type, language),
     smallImageKey: getSmallImageKey(type),
     smallImageText: getSmallImageText(type),
     startTimestamp: CurrentTimestamp
   }
 
+  if (type === 'editing') activityObject.largeImageText = getLargeImageText(language)
+
   return Ninth.user.setActivity(activityObject)
 }
 
 function getDetails() {
-  const str = basename(decodeURIComponent(workspaceFolders[0].name))
-  return `In ${sliceString(str)}`
+  return `In ${truncateString(getWorkspaceName())}`
 }
 
 function getState(type: StatusType, document?: TextDocument) {
-  const str = decodeURIComponent(document.uri.split('/').at(-1))
-  return type === 'idle' ? 'Idling' : `Editing ${sliceString(str)}`
+  return type === 'idle' ? 'Idling' : `Editing ${truncateString(getFileName(document))}`
 }
 
 function getLargeImageKey(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? IMAGE_KEYS.KEYBOARD : language ? language.LanguageAsset : IMAGE_KEYS.TEXT
+  return type === 'idle' ? IMAGE_KEYS.KEYBOARD : language.LanguageAsset
 }
 
-function getLargeImageText(type: StatusType, language?: LanguageData) {
-  return type === 'idle' ? 'Lapce' : language ? `Editing a ${language.LanguageId} file` : 'Editing a Text document'
+function getLargeImageText(language: LanguageData) {
+  return `Editing a ${language.LanguageId.toUpperCase()} file`
 }
 
 function getSmallImageKey(type: StatusType) {
@@ -53,9 +52,25 @@ function getSmallImageKey(type: StatusType) {
 }
 
 function getSmallImageText(type: StatusType) {
-  return type === 'idle' ? 'Idle' : 'Lapce'
+  return type === 'idle' ? 'Sleeping' : 'Lapce'
 }
 
-function sliceString(ctx: string) {
-  return ctx.length > 128 ? `${ctx.slice(0, 125)}...` : ctx
+function getWorkspaceName() {
+  if (!workspaceFolders[0]) return 'No workspace'
+  return decodeURIComponent(basename(workspaceFolders[0].name))
+}
+
+function getFileName(document: TextDocument) {
+  return decodeURIComponent(basename(document.uri))
+}
+
+function resolveJson(document: TextDocument): LanguageData {
+  const FileName = getFileName(document).toLowerCase()
+  const ExtensionName = extname(FileName) ? FileName.slice(FileName.indexOf('.')) : null
+
+  return LanguagesJson[FileName]
+    ? { ...LanguagesJson[FileName] }
+    : LanguagesJson[ExtensionName]
+    ? { ...LanguagesJson[ExtensionName] }
+    : { LanguageId: 'Text', LanguageAsset: IMAGE_KEYS.TEXT }
 }

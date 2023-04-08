@@ -1,8 +1,21 @@
 #! /usr/bin/env node
-import type { WorkspaceFolder } from 'vscode-languageserver/node'
-import { createConnection, MessageType, ProposedFeatures, TextDocuments, TextDocumentSyncKind } from 'vscode-languageserver/node'
+import {
+  createConnection,
+  ProposedFeatures,
+  TextDocuments,
+  TextDocumentSyncKind,
+  type WorkspaceFolder
+} from 'vscode-languageserver/node'
+import {
+  initializeServer,
+  Ninth,
+  rpcConection,
+  sendNotification,
+  setActivity,
+  startTimer,
+  workDoneProgress
+} from './utils'
 import { TextDocument } from 'vscode-languageserver-textdocument'
-import { initializeServer, Ninth, rpcConection, sendNotification, setActivity, workDoneProgress } from './utils'
 
 export const Connection = createConnection(ProposedFeatures.all)
 export const CurrentTimestamp = Date.now()
@@ -12,13 +25,13 @@ export let workspaceFolders: WorkspaceFolder[]
 Documents.onDidSave(({ document }) => {
   if (!rpcConection) return null
   setActivity('editing', document)
-  // startTimer(document)
+  startTimer(document)
 })
 
 Documents.onDidChangeContent(({ document }) => {
   if (!rpcConection) return null
   setActivity('editing', document)
-  // startTimer(document)
+  startTimer(document)
 })
 
 Connection.onInitialize((params) => {
@@ -46,6 +59,6 @@ Connection.onExit(async () => await Ninth.destroy())
 Connection.onShutdown(async () => await Ninth.destroy())
 
 process.on('unhandledRejection', (e) => {
-  sendNotification(`Error: ${e}`, MessageType.Error)
+  sendNotification(`Error: ${e}`, 1)
   workDoneProgress.report('Error')
 })
