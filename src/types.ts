@@ -10,4 +10,18 @@ export interface LanguageData {
   LanguageAsset: string
 }
 
+export interface LapcordConfig {
+  timeoutToIdle?: string
+  editing?: PresenceConfigOpts
+  idle?: PresenceConfigOpts
+}
+
+export interface PresenceConfigOpts {
+  state?: string
+  details?: string
+  showTimestamp?: boolean
+  largeImageText?: string
+  smallImageText?: string
+}
+
 export type StatusType = 'idle' | 'editing'

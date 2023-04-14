@@ -16,11 +16,13 @@ import {
   workDoneProgress
 } from './utils'
 import { TextDocument } from 'vscode-languageserver-textdocument'
+import { LapcordConfig } from './types'
 
 export const Connection = createConnection(ProposedFeatures.all)
 export const CurrentTimestamp = Date.now()
 export const Documents = new TextDocuments(TextDocument)
 export let workspaceFolders: WorkspaceFolder[]
+export let lapcordConfig: LapcordConfig
 
 Documents.onDidSave(({ document }) => {
   if (!rpcConection) return null
@@ -35,6 +37,7 @@ Documents.onDidChangeContent(({ document }) => {
 })
 
 Connection.onInitialize((params) => {
+  lapcordConfig = params.initializationOptions
   workspaceFolders = params.workspaceFolders
   Documents.listen(Connection)
   return {
