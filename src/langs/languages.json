@@ -618,7 +618,7 @@
       "LanguageAsset": "postcss"
     },
     ".prettierrc": {
-      "LanguageId": "Prettier",
+      "LanguageID": "Prettier",
       "LanguageAsset": "prettier"
     },
     ".prettierrc.yaml": {
@@ -626,7 +626,7 @@
       "LanguageAsset": "prettier"
     },
     ".prettierignore": {
-      "LanguageId": "Prettier",
+      "LanguageID": "Prettier",
       "LanguageAsset": "prettier"
     },
     "pug.config.js": {
@@ -1336,7 +1336,7 @@
       "LanguageAsset": "markdown"
     },
     ".mdx": {
-      "LanguageId": "MarkdownX",
+      "LanguageID": "MarkdownX",
       "LanguageAsset": "markdownx"
     },
     ".marko": {
@@ -1460,31 +1460,31 @@
       "LanguageAsset": "purescript"
     },
     ".py": {
-      "LanguageId": "Python",
+      "LanguageID": "Python",
       "LanguageAsset": "python"
     },
     ".pyi": {
-      "LanguageId": "Python",
+      "LanguageID": "Python",
       "LanguageAsset": "python"
     },
     ".pyc": {
-      "LanguageId": "Python",
+      "LanguageID": "Python",
       "LanguageAsset": "python"
     },
     ".pyd": {
-      "LanguageId": "Python",
+      "LanguageID": "Python",
       "LanguageAsset": "python"
     },
     ".pyw": {
-      "LanguageId": "Python",
+      "LanguageID": "Python",
       "LanguageAsset": "python"
     },
     ".pyz": {
-      "LanguageId": "Python",
+      "LanguageID": "Python",
       "LanguageAsset": "python"
     },
     ".pyo": {
-      "LanguageId": "Python",
+      "LanguageID": "Python",
       "LanguageAsset": "python"
     },
     ".r": {

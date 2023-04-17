@@ -9,7 +9,7 @@
     "indentStyle": "space",
     "lineWidth": 120,
     "formatWithErrors": false,
-    "ignore": ["dist"]
+    "ignore": ["lib"]
   },
 	"linter": {
 		"enabled": true,
@@ -24,6 +24,6 @@
 		}
 	},
   "files": {
-    "ignore": ["dist", "node_modules"]
+    "ignore": [".yarn", "assets", "lib", "node_modules"]
   }
 }
