@@ -1,7 +1,14 @@
 import type { ClientOptions } from '@xhayper/discord-rpc'
+import {
+  InitializeError,
+  HandlerResult,
+  InitializeResult,
+  TextDocumentSyncKind,
+  NotificationHandler,
+  InitializeParams
+} from 'vscode-languageserver'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
-import { InitializeError, HandlerResult, InitializeResult } from 'vscode-languageserver'
 
 export const LockFile = join(tmpdir(), 'discord-rpc.lock')
 export const CurrentTimestamp = new Date()
@@ -19,7 +26,7 @@ export const InitializeCapabilities: InitializeReturn = {
   capabilities: {
     textDocumentSync: {
       openClose: true,
-      change: 2
+      change: TextDocumentSyncKind.Incremental
     }
   },
   serverInfo: {
@@ -58,3 +65,4 @@ export type StatusType = 'editing' | 'idle'
 
 // rome-ignore lint/suspicious/noExplicitAny: That's native type, Microsoft's fault.
 export type InitializeReturn = HandlerResult<InitializeResult<any>, InitializeError>
+export type InitializedReturn = NotificationHandler<InitializeParams>

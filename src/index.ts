@@ -1,5 +1,7 @@
 #! /usr/bin/env node
-import { createConnection } from "./utils/lsp-connection";
+import { createConnection } from './utils/lsp-connection'
 
-createConnection()
-  .listen()
+const { connection, documents } = createConnection()
+
+documents.listen(connection)
+connection.listen()

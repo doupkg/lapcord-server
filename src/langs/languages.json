@@ -741,6 +741,10 @@
       "LanguageID": "YAML",
       "LanguageAsset": "yaml"
     },
+    ".yarnrc.yml": {
+      "LanguageID": "Yarn",
+      "LanguageAsset": "yarn"
+    },
     "yarn.lock": {
       "LanguageID": "Yarn",
       "LanguageAsset": "yarn"

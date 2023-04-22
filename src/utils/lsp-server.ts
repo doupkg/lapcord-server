@@ -1,17 +1,17 @@
 import type { TextDocument } from 'vscode-languageserver-textdocument'
-import { type Connection, TextDocuments, InitializeParams, ShowMessageNotification, ShowMessageParams } from 'vscode-languageserver'
+import { type Connection, InitializeParams, TextDocuments } from 'vscode-languageserver'
+import { Client, type SetActivity } from '@xhayper/discord-rpc'
+import { basename, extname } from 'node:path'
 import {
   ClientOpts,
   CurrentTimestamp,
   ImagesKeys,
   InitializeCapabilities,
   InitializeReturn,
+  InitializedReturn,
   LanguageData,
-  LapcordConfig,
   StatusType
 } from '../config'
-import { Client, type SetActivity } from '@xhayper/discord-rpc'
-import { basename, extname } from 'node:path'
 import * as Languages from '../langs/languages.json'
 
 /**
@@ -20,8 +20,6 @@ import * as Languages from '../langs/languages.json'
  */
 export class Server {
   private client = new Client(ClientOpts)
-  // private config: LapcordConfig | null
-  // private timeoutId: NodeJS.Timeout | null
   private workspaceName: string
 
   /**
@@ -36,27 +34,41 @@ export class Server {
 
   /**
    * Event corresponding to `onInitialize`
-   * @param {TextDocuments<TextDocument>} document
    * @param {InitializeParams} params
    */
-  public onInitialize(document: TextDocuments<TextDocument>, params?: InitializeParams): InitializeReturn {
-    // this.config = params?.initializationOptions ?? null
+  public onInitialize(params?: InitializeParams): InitializeReturn {
     this.workspaceName = basename(params?.workspaceFolders[0].name ?? 'Not in a workspace!')
-    document.listen(this.connection)
     return InitializeCapabilities
   }
 
   /**
    * Event corresponding to `onInitialized`
    */
-  public async onInitialized() {
+  public async onInitialized(documents: TextDocuments<TextDocument>): Promise<InitializedReturn> {
     const workReporter = await this.connection.window.createWorkDoneProgress()
-    workReporter.begin('Discord Presence', 0, 'Connecting...')
+    workReporter.begin('Discord Presence', 50, 'Connecting...')
     this.client.on('connected', () => {
+      workReporter.report(100, this.client.user?.tag)
       this.updateActivity('idle')
-      workReporter.report(this.client.user.tag)
+      documents.onDidChangeContent((x) => this.updateActivity('editing', x.document))
+      documents.onWillSave((x) => this.onWillSave(x.document))
     })
-    return this.client.login()
+    this.client.login()
+    return
+  }
+
+  /**
+   * Event corresponding to `onExit`
+   */
+  public onExit() {
+    this.client.destroy()
+  }
+
+  /**
+   * Event corresponding to `onShutdown`
+   */
+  public onShutdown() {
+    this.client.destroy()
   }
 
   /**
@@ -65,7 +77,6 @@ export class Server {
    */
   public async onDidChangeContent(document: TextDocument) {
     this.updateActivity('editing', document)
-    // this.setTimeout
   }
 
   /**
@@ -74,7 +85,6 @@ export class Server {
    */
   public async onWillSave(document: TextDocument) {
     this.updateActivity('editing', document)
-    // this.setTimeout()
   }
 
   /**
@@ -96,7 +106,7 @@ export class Server {
     }
 
     const Activity: SetActivity = {
-      state: status === 'editing' ? `Editing ${fileName}` : 'Idling',
+      state: status === 'editing' ? `Editing ${this.truncateString(fileName)}` : 'Idling',
       largeImageKey: status === 'editing' ? languageData.LanguageAsset : ImagesKeys.KEYBOARD,
       smallImageKey: status === 'editing' ? ImagesKeys.LOGO : ImagesKeys.IDLE,
       smallImageText: status === 'editing' ? 'Lapce' : 'Idling',
@@ -104,7 +114,7 @@ export class Server {
     }
 
     if (status === 'editing') {
-      Activity.details = `In ${this.workspaceName}`
+      Activity.details = `In ${this.truncateString(this.workspaceName)}`
       Activity.largeImageText = `Editing a ${languageData.LanguageID.toUpperCase()} file`
     }
 
@@ -156,27 +166,4 @@ export class Server {
       ? { ...ext_files[extname(fileName)] }
       : { LanguageID: 'Text', LanguageAsset: ImagesKeys.TEXT }
   }
-
-  public onExit() {
-    this.client.destroy()
-  }
-
-  public onShutdown() {
-    this.client.destroy()
-  }
-
-  /**
-   * Set time out for idling
-   * @param {number} time
-   * @example
-   * ```js
-   * setTimeout(2) // 2 minutes
-   * ```
-   */
-  /* private setTimeout(time?: number) {
-    if (this.timeoutId) clearTimeout(this.timeoutId)
-    this.timeoutId = setTimeout(async () => {
-      this.updateActivity('idle')
-    }, time || 1 * 60_000)
-  } */
 }

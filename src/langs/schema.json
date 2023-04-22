@@ -5,7 +5,7 @@
     "$schema": {
       "type": "string"
     },
-    "ext_files": {
+    "config_files": {
       "type": "object",
       "additionalProperties": {
         "type": "object",
@@ -20,7 +20,7 @@
         "required": ["LanguageID", "LanguageAsset"]
       }
     },
-    "config_files": {
+    "ext_files": {
       "type": "object",
       "additionalProperties": {
         "type": "object",
