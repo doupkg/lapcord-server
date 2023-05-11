@@ -24,9 +24,9 @@
     "build": "swc src -d lib --copy-files",
     "lint": "rome check src",
     "lint:fix": "rome check --apply src",
-    "format": "rome format src --semicolons as-needed --quote-style single --trailing-comma none",
-    "format:fix": "rome format --write src --semicolons as-needed --quote-style single --trailing-comma none",
-    "clean:lock": "node scripts/removeLock.cjs"
+    "format": "rome format src scripts --semicolons as-needed --quote-style single --trailing-comma none",
+    "format:fix": "rome format --write src scripts --semicolons as-needed --quote-style single --trailing-comma none",
+    "clean": "node scripts/clean.cjs"
   },
   "devDependencies": {
     "@swc/cli": "0.1.62",
@@ -34,7 +34,7 @@
     "@swc/register": "0.1.10",
     "@types/node": "18.15.11",
     "@xhayper/discord-rpc": "1.0.15",
-    "commander": "10.0.1",
+    "axios": "1.4.0",
     "mocha": "10.2.0",
     "rome": "12.0.0",
     "typescript": "5.0.4",

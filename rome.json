@@ -8,8 +8,7 @@
     "indentSize": 2,
     "indentStyle": "space",
     "lineWidth": 120,
-    "formatWithErrors": false,
-    "ignore": ["lib"]
+    "formatWithErrors": false
   },
 	"linter": {
 		"enabled": true,

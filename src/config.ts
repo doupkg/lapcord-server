@@ -1,11 +1,11 @@
 import type { ClientOptions } from '@xhayper/discord-rpc'
 import {
-  InitializeError,
-  HandlerResult,
-  InitializeResult,
-  TextDocumentSyncKind,
-  NotificationHandler,
-  InitializeParams
+  type HandlerResult,
+  type InitializeError,
+  type InitializeParams,
+  type InitializeResult,
+  type NotificationHandler,
+  TextDocumentSyncKind
 } from 'vscode-languageserver'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
@@ -13,10 +13,10 @@ import { tmpdir } from 'node:os'
 export const LockFile = join(tmpdir(), 'discord-rpc.lock')
 export const CurrentTimestamp = new Date()
 
-const ClientID = '1093947322708262992'
+const clientId = '1093947322708262992'
 
 export const ClientOpts: ClientOptions = {
-  clientId: ClientID,
+  clientId,
   transport: {
     type: 'ipc'
   }
@@ -33,6 +33,12 @@ export const InitializeCapabilities: InitializeReturn = {
     name: 'Lapcord',
     version: '2.1.0'
   }
+}
+
+export enum LogLevel {
+  DEBUG = 0,
+  ERROR = 1,
+  WARN = 2
 }
 
 export enum ImagesKeys {
