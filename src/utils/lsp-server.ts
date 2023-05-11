@@ -49,7 +49,7 @@ export class Server {
    */
   public onInitialize(params?: InitializeParams): InitializeReturn {
     this.logger.log('Initializating server')
-    this.workspaceName = basename(params?.workspaceFolders[0].name ?? 'Not in a workspace!')
+    this.workspaceName = basename(params?.workspaceFolders[0].name ?? 'not in a workspace!')
     return InitializeCapabilities
   }
 
@@ -181,7 +181,9 @@ export class Server {
       const lapcordPkg = await import('../../package.json')
       const latestVersion = response.data.version
       if (latestVersion > lapcordPkg.version) {
-        this.logger.warn(`A new version of Lapcord is available: v${latestVersion} (current version: v${lapcordPkg.version})`)
+        this.logger.warn(
+          `A new version of Lapcord is available: v${latestVersion} (current version: v${lapcordPkg.version})`
+        )
         this.sendNotification(
           MessageType.Info,
           `There is a new version for Lapcord!\nActual version: v${lapcordPkg.version}, Latest version: v${latestVersion}`
