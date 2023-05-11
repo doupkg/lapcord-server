@@ -8,7 +8,7 @@ import {
   WorkDoneProgressReporter
 } from 'vscode-languageserver'
 import {
-  ClientOpts,
+  ClientOptions,
   CurrentTimestamp,
   ImagesKeys,
   InitializeCapabilities,
@@ -29,7 +29,7 @@ import * as Languages from '../langs/languages.json'
  */
 export class Server {
   private logger = new Logger(this.connection)
-  private client = new Client(ClientOpts)
+  private client = new Client(ClientOptions)
   private workReporter: WorkDoneProgressReporter
   private workspaceName: string
 
@@ -49,6 +49,7 @@ export class Server {
    */
   public onInitialize(params?: InitializeParams): InitializeReturn {
     this.logger.log('Initializating server')
+    this.logger.log(`${JSON.stringify(params?.initializationOptions)}`)
     this.workspaceName = basename(params?.workspaceFolders[0].name ?? 'not in a workspace!')
     return InitializeCapabilities
   }

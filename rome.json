@@ -1,8 +1,8 @@
 {
-	"$schema": "./node_modules/rome/configuration_schema.json",
-	"organizeImports": {
-		"enabled": false
-	},
+  "$schema": "./node_modules/rome/configuration_schema.json",
+  "organizeImports": {
+    "enabled": false
+  },
   "formatter": {
     "enabled": true,
     "indentSize": 2,
@@ -10,18 +10,18 @@
     "lineWidth": 120,
     "formatWithErrors": false
   },
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
       "style": {
         "noImplicitBoolean": "error",
         "useConst": "error",
         "useTemplate": "error",
         "noUnusedTemplateLiteral": "error"
       }
-		}
-	},
+    }
+  },
   "files": {
     "ignore": [".yarn", "assets", "lib", "node_modules"]
   }

@@ -1,4 +1,4 @@
-import type { ClientOptions } from '@xhayper/discord-rpc'
+import type { ClientOptions as ClientOpts } from '@xhayper/discord-rpc'
 import {
   type HandlerResult,
   type InitializeError,
@@ -7,15 +7,12 @@ import {
   type NotificationHandler,
   TextDocumentSyncKind
 } from 'vscode-languageserver'
-import { join } from 'node:path'
-import { tmpdir } from 'node:os'
 
-export const LockFile = join(tmpdir(), 'discord-rpc.lock')
 export const CurrentTimestamp = new Date()
 
 const clientId = '1093947322708262992'
 
-export const ClientOpts: ClientOptions = {
+export const ClientOptions: ClientOpts = {
   clientId,
   transport: {
     type: 'ipc'
