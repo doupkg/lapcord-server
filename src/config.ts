@@ -50,21 +50,36 @@ export interface LanguageData {
   LanguageAsset: string
 }
 
-export interface LapcordConfig {
-  timeoutToIdle?: string
-  editing?: PresenceConfigOpts
-  idle?: PresenceConfigOpts
+export interface LapcordInitializationOpts {
+  editing?: Partial<{
+    details: string
+    largeImageText: string
+    showTimestamp: boolean
+    smallImageText: string
+    state: string
+  }>
+  idle?: Partial<{
+    details: string
+    largeImageText: string
+    showTimestamp: boolean
+    smallImageText: string
+    state: string
+    timeout: number
+  }>
 }
 
-export interface PresenceConfigOpts {
-  state?: string
-  details?: string
-  showTimestamp?: boolean
-  largeImageText?: string
-  smallImageText?: string
+export type EditingType = {
+  fileName: string
+  languageAsset: string
+  languageId: string
+  languageUpper: string
+  workspaceName: string
+  workspacePath: string
 }
 
-export type StatusType = 'editing' | 'idle'
+export type IdlingType = { workspaceName: string; workspacePath: string }
+
+export type StatusType = 'editing' | 'idling'
 
 // rome-ignore lint/suspicious/noExplicitAny: That's native type, Microsoft's fault.
 export type InitializeReturn = HandlerResult<InitializeResult<any>, InitializeError>

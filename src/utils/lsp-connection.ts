@@ -1,4 +1,4 @@
-import { ProposedFeatures, TextDocuments, createConnection as createServerConnection } from 'vscode-languageserver/node'
+import { createConnection as createServerConnection, ProposedFeatures, TextDocuments } from 'vscode-languageserver/node'
 import { TextDocument } from 'vscode-languageserver-textdocument'
 import { Server } from './lsp-server'
 
