@@ -5,7 +5,7 @@
   "packageManager": "yarn@3.5.0",
   "bin": "lib/index.js",
   "files": [
-    "dist"
+    "lib"
   ],
   "publishConfig": {
     "access": "public",

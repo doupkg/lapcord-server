@@ -23,6 +23,6 @@
     }
   },
   "files": {
-    "ignore": [".yarn", "assets", "lib", "dist", "node_modules"]
+    "ignore": [".yarn", "assets", "lib", ".cache", "node_modules"]
   }
 }

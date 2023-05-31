@@ -45,12 +45,12 @@ export enum ImagesKeys {
   TEXT = 'text'
 }
 
-export interface LanguageData {
+export type LanguageData = {
   LanguageID: string
   LanguageAsset: string
 }
 
-export interface LapcordInitializationOpts {
+export type LapcordInitializationOpts = {
   editing?: Partial<{
     details: string
     largeImageText: string
@@ -69,17 +69,18 @@ export interface LapcordInitializationOpts {
 }
 
 export type EditingType = {
-  fileName: string
-  languageAsset: string
-  languageId: string
-  languageUpper: string
-  workspaceName: string
-  workspacePath: string
+  file_name: string
+  file_ext: string
+  language_asset: string
+  language_id: string
+  language_name: string
+  workspace_name: string
+  workspace_path: string
 }
 
-export type IdlingType = { workspaceName: string; workspacePath: string }
+export type IdleType = { workspace_name: string; workspace_path: string }
 
-export type StatusType = 'editing' | 'idling'
+export type StatusType = 'editing' | 'idle'
 
 // rome-ignore lint/suspicious/noExplicitAny: That's native type, Microsoft's fault.
 export type InitializeReturn = HandlerResult<InitializeResult<any>, InitializeError>

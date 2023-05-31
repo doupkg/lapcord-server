@@ -7,11 +7,10 @@ import {
   ShowMessageParams,
   WorkDoneProgressReporter
 } from 'vscode-languageserver'
-import { basename } from 'node:path'
 import { InitializeCapabilities, type InitializeReturn } from '../config'
 import { ActivityProxy } from './activity'
 import { Logger } from './logger'
-import * as axios from 'axios'
+import { fetchVersion } from './fetch'
 
 export class Server {
   private logger = new Logger(this.connection)
@@ -20,30 +19,9 @@ export class Server {
 
   constructor(protected connection: Connection) {}
 
-  private async fetchVersion() {
-    try {
-      const response = await axios.default.get('https://registry.npmjs.org/lapcord/latest')
-      const lapcordPkg = await import('../../package.json')
-      const latestVersion = response.data.version
-      if (latestVersion > lapcordPkg.version) {
-        this.logger.warn(
-          `A new version of Lapcord is available: v${latestVersion} (current version: v${lapcordPkg.version})`
-        )
-        this.sendNotification(
-          MessageType.Info,
-          `There is a new version for Lapcord!\nCurrent version: v${lapcordPkg.version}, Latest version: v${latestVersion}`
-        )
-      } else {
-        this.logger.log('Lapcord is up to date')
-      }
-    } catch (e) {
-      this.logger.error(e)
-    }
-  }
-
   public onError(error: unknown) {
     this.logger.error(`${error}`)
-    this.workReporter.report(0, 'Error')
+    this.workReporter.report(0, 'An error has occurred')
     this.sendNotification(1, `${error}`)
   }
 
@@ -65,18 +43,18 @@ export class Server {
     this.workReporter.begin('Discord Presence', 50, 'Connecting...')
     this.logger.log('Server initialized')
 
-    await this.fetchVersion()
-
     this.client.container.on('connected', () => {
       this.logger.log(`Client logged (${this.client.container.user?.tag} has been hacked)`)
       this.workReporter.report(100, this.client.container.user?.tag)
-      this.client.update('idling')
+      this.client.enabled = true
+      this.client.update('idle')
 
       documents.onDidChangeContent((x) => this.client.update('editing', x.document))
       documents.onWillSave((x) => this.onWillSave(x.document))
     })
 
     await this.client.container.login()
+    await fetchVersion(this.logger)
   }
 
   public onWillSave(document: TextDocument) {
@@ -89,4 +67,6 @@ export class Server {
       type
     } as ShowMessageParams)
   }
+
+  private startTimeout() {}
 }

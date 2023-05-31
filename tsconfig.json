@@ -9,6 +9,5 @@
     "outDir": "lib",
     "declaration": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["test"]
+  "include": ["src/**/*", "test/**/*"]
 }
