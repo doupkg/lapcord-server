@@ -2,7 +2,7 @@
   <a href="https://plugins.lapce.dev/plugins/Hyduez/dou.lapcord">
     <img width="200" src="assets/logo.png">
   </a>
-  <h1> Lapcord-server </h1>
+  <h1> lapcord-server </h1>
 </div>
 
 <div align='center'>
@@ -16,46 +16,76 @@
 </div>
 
 ## Table of Contents
+
 - [Getting Started](#getting-started)
   - [Installing Lapcord](#installing-lapcord)
   - [Using Lapcord](#using-lapcord)
+  - [Lapcord logs](#lapcord-logs)
+- [Configuration](#configuration)
 - [Contributing](#contributing)
-- [Support](#support)
 - [Contributors](#contributors)
 - [Credits](#credits)
 
 ## Getting Started
-To begin using Lapcord you will have to install its extension in Lapce, which is available at [plugins.lapce.dev](https://plugins.lapce.dev).
+
+To begin using Lapcord you will have to install its extension in Lapce, which can be found at [plugins.lapce.dev](https://plugins.lapce.dev).
 
 ### Installing Lapcord
-| ✨ | Type | Command |
-|----|-------|-------|
-| ✅ | NPM | `$ npm install -g lapcord` |
-| ✅ | Yarn | `$ yarn global add lapcord` |
-| ✅ | PNPM | `$ pnpm add -g lapcord` |
 
-###### Make sure you have your package manager binaries installed in your system path.
+| Package Manager | Command |
+| ----- | ------ |
+| NPM | `$ npm install -g lapcord` |
+| Yarn | `$ yarn global add lapcord` |
+| PNPM | `$ pnpm add -g lapcord` |
 
-Now you should have the Lapcord binaries installed globally.
+###### Ensure that you have the package manager binaries installed in your path.
 
-To check it run `lapcord`. If it finds the command is because it is installed correctly, otherwise it is not.
+Now, Lapcord binaries should be installed globally.
+
+To verify the installation, run `lapcord`. If the command is recognized, it means Lapcord is installed correctly; otherwise, it is not.
 
 ### Using Lapcord
 
-Open Lapce.
+Open Lapce in a folder. Your Discord profile should now display a presence like this:
 
-Now your Discord profile should display a presence like this:
+<details>
+  <summary>Preview</summary>
+  <br />
+  <img src='https://i.imgur.com/ttCbBkM.png' alt='discord-rpc' />
+</details>
 
-<img src='https://i.imgur.com/ttCbBkM.png' alt='discord-rpc' />
+###### If you don't have Discord open on your computer, Lapcord will notify you that an error occurred
 
-###### If you do not have a Discord session on your desktop, Lapcord will show a notification in Lapce indicating that an error has occurred.
+### Lapcord logs
+
+Lapcord logs initialization events and errors in Lapce's logs. It stores its cache in the `.cache` directory within the module folder to avoid excessive requests to the npm API for registering the latest version and to prevent ratelimit.
+
+## Configuration
+
+Lapcord configuration is split into two sections: editing and idle configuration. Each section has templates with keywords for internal property usage.
+
+#### Editing syntax
+
+| Keyword | Description | Output |
+| ------- | ----------- | ------ |
+| {{file_name} | File name | index.ts |
+| {{file_ext}} | File extension | .ts |
+| {{language_asset}} | Language asset | typescript |
+| {{language_capital}} | Language capital | TYPESCRIPT |  
+| {{language_id}} | Language ID | TypeScript |
+| {{workspace_name}} | Workspace name | project |
+| {{workspace_path}} | Workspace path | /home/usr/project/ |
+
+#### Idle syntax
+
+| Keyword | Description | Output |
+| ------- | ----------- | ------ |
+| {{workspace_name}} | Workspace name | project |
+| {{workspace_path}} | Workspace path | /home/usr/project/ |
 
 ## Contributing
 
 See [CONTRIBUTING.md](https://github.com/doupkg/lapcord-server/blob/master/CONTRIBUTING.md).
-
-## Support
-We are more active on Discord. [Click here](https://discord.gg/uujENVrXUC).
 
 ## Contributors
 
@@ -80,5 +110,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## Credits
+
 - [smokes/vscode-discord-assets](https://github.com/smokes/vscode-discord-assets): for the icons.
 - [xhayper/discord-rpc](https://github.com/xhayper/discord-rpc): for the RPC client.

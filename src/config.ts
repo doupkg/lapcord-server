@@ -72,8 +72,8 @@ export type EditingType = {
   file_name: string
   file_ext: string
   language_asset: string
+  language_capital: string
   language_id: string
-  language_name: string
   workspace_name: string
   workspace_path: string
 }

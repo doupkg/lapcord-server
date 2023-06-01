@@ -18,7 +18,7 @@ import * as Mustache from 'mustache'
 export class ActivityProxy {
   public container: Client
   public options: LapcordInitializationOpts
-  private timeout: NodeJS.Timeout | null
+  private timeout: NodeJS.Timeout
   private state: boolean = false
   private workspaceName: string
   private workspacePath: string
@@ -83,8 +83,8 @@ export class ActivityProxy {
         file_name: fileName,
         file_ext: fileExtension,
         language_asset: languageAsset,
+        language_capital: languageID.toUpperCase(),
         language_id: languageID,
-        language_name: languageID.toUpperCase(),
         workspace_name: this.workspaceName,
         workspace_path: this.workspacePath
       }
@@ -102,7 +102,7 @@ export class ActivityProxy {
         Mustache.render(
           this.checkString(this.options.editing.largeImageText)
             ? this.options.editing.largeImageText
-            : 'Editing a {{language_name}} file',
+            : 'Editing a {{language_capital}} file',
           editingView
         )
       )
@@ -147,7 +147,7 @@ export class ActivityProxy {
             editingView
           )
         : Mustache.render(
-            this.checkString(this.options.idle.smallImageText) ? this.options.idle.smallImageText : 'idle',
+            this.checkString(this.options.idle.smallImageText) ? this.options.idle.smallImageText : 'Sleeping',
             idleView
           )
     )
