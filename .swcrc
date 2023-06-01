@@ -5,10 +5,14 @@
       "syntax": "typescript",
       "dynamicImport": true,
       "decorators": false,
-      "tsx": false
+      "tsx": false,
+      "dts": true
     },
     "preserveAllComments": false,
-    "target": "es2022"
+    "target": "es2022",
+    "minify": {
+      "mangle": true
+    }
   },
   "module": {
     "type": "commonjs",

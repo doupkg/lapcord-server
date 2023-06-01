@@ -1,27 +1,12 @@
 {
   "name": "@doupkg/lapcord",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Module required to run Lapcord.",
-  "packageManager": "pnpm@8.1.1",
-  "scripts": {
-    "test": "mocha",
-    "build": "swc src -d dist --copy-files",
-    "lint": "rome check src",
-    "lint:fix": "rome check --apply src",
-    "format": "rome format src --semicolons as-needed --quote-style single --trailing-comma none",
-    "format:fix": "rome format --write src --semicolons as-needed --quote-style single --trailing-comma none",
-    "clean:lock": "node scripts/removeLock.cjs"
-  },
-  "bin": {
-    "lapcord": "dist/server.js"
-  },
+  "packageManager": "yarn@3.5.0",
+  "bin": "lib/index.js",
   "files": [
-    "dist"
+    "lib"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/doupkg/lapcord-server.git"
-  },
   "publishConfig": {
     "access": "public",
     "tag": "latest"
@@ -30,19 +15,34 @@
     "name": "Dou",
     "url": "https://github.com/doupkg"
   },
-  "license": "Apache-2.0",
-  "private": false,
-  "dependencies": {
-    "@xhayper/discord-rpc": "1.0.15",
-    "vscode-languageserver": "8.1.0",
-    "vscode-languageserver-textdocument": "1.0.8"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doupkg/lapcord-server.git"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build": "swc src -d lib --copy-files",
+    "lint": "rome check src",
+    "lint:fix": "rome check --apply src",
+    "format": "rome format src scripts --semicolons as-needed --quote-style single --trailing-comma none",
+    "format:fix": "rome format --write src scripts --semicolons as-needed --quote-style single --trailing-comma none",
+    "clean": "node scripts/clean.cjs"
   },
   "devDependencies": {
     "@swc/cli": "0.1.62",
     "@swc/core": "1.3.40",
     "@swc/register": "0.1.10",
+    "@types/mustache": "4",
+    "@types/node": "18.15.11",
+    "@xhayper/discord-rpc": "1.0.15",
+    "axios": "1.4.0",
+    "colorette": "2.0.20",
     "mocha": "10.2.0",
+    "mustache": "4.2.0",
     "rome": "12.0.0",
-    "typescript": "4.9.5"
-  }
+    "typescript": "5.0.4",
+    "vscode-languageserver": "8.1.0",
+    "vscode-languageserver-textdocument": "1.0.8"
+  },
+  "license": "MIT"
 }

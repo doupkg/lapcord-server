@@ -1,6 +1,3 @@
 {
-  "recommendations": [
-    "EditorConfig.EditorConfig",
-    "rome.rome"
-  ]
+  "recommendations": ["EditorConfig.EditorConfig", "rome.rome"]
 }
