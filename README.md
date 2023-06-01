@@ -32,6 +32,7 @@ To begin using Lapcord you will have to install its extension in Lapce, which is
 |----|-------|-------|
 | ✅ | NPM | `$ npm install -g lapcord` |
 | ✅ | Yarn | `$ yarn global add lapcord` |
+| ✅ | PNPM | `$ pnpm add -g lapcord` |
 
 ###### Make sure you have your package manager binaries installed in your system path.
 
